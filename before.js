@@ -276,15 +276,207 @@ const page1Table = new Table({
         .Properties.setWidth("80%", WidthType.PCT);
     }
 
-    // ************** table3 ************
-    const page3Table = new Table({
+        // ************** table3 ************
+        const page3Table = new Table({
+            rows: 16,
+            columns: 2,
+            width: 4535,
+            widthUnitType: WidthType.DXA,
+        });
+    
+        page3Table
+        .getCell(0, 0)
+        .add(new Paragraph("0,0"))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "auto",
+        })
+    
+        page3Table
+        .getCell(0, 1)
+        .add(new Paragraph("0,1"))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "auto",
+        });
+    
+        // ********column 0*********
+        page3Table
+        .getCell(1, 0)
+        .add(new Paragraph("1,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(2, 0)
+        .add(new Paragraph("2,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(3, 0)
+        .add(new Paragraph("3,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(4, 0)
+        .add(new Paragraph("4,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(5, 0)
+        .add(new Paragraph("5,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(6, 0)
+        .add(new Paragraph("6,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(7, 0)
+        .add(new Paragraph("7,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(8, 0)
+        .add(new Paragraph("8,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+
+        // ********column 1*********
+        page3Table
+        .getCell(1, 1)
+        .add(new Paragraph("1,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(2, 1)
+        .add(new Paragraph("2,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(3, 1)
+        .add(new Paragraph("3,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(4, 1)
+        .add(new Paragraph("4,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(5, 1)
+        .add(new Paragraph("5,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(6, 1)
+        .add(new Paragraph("6,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(7, 1)
+        .add(new Paragraph("7,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page3Table
+        .getCell(8, 1)
+        .add(new Paragraph("8,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+
+          // ************** table4 ************
+          const page4Table = new Table({
+            rows: 20,
+            columns: 2,
+            width: 4535,
+            widthUnitType: WidthType.DXA,
+        });
+    
+        page4Table
+        .getCell(0, 0)
+        .add(new Paragraph("0,0"))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "auto",
+        })
+    
+        page4Table
+        .getCell(0, 1)
+        .add(new Paragraph("0,1"))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "auto",
+        });
+    
+        // ********column 0*********
+        page4Table
+        .getCell(1, 0)
+        .add(new Paragraph("1,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(2, 0)
+        .add(new Paragraph("2,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(3, 0)
+        .add(new Paragraph("3,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(4, 0)
+        .add(new Paragraph("4,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(5, 0)
+        .add(new Paragraph("5,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(6, 0)
+        .add(new Paragraph("6,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(7, 0)
+        .add(new Paragraph("7,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(8, 0)
+        .add(new Paragraph("8,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+
+        // ********column 1*********
+        page4Table
+        .getCell(1, 1)
+        .add(new Paragraph("1,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(2, 1)
+        .add(new Paragraph("2,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(3, 1)
+        .add(new Paragraph("3,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(4, 1)
+        .add(new Paragraph("4,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(5, 1)
+        .add(new Paragraph("5,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(6, 1)
+        .add(new Paragraph("6,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(7, 1)
+        .add(new Paragraph("7,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page4Table
+        .getCell(8, 1)
+        .add(new Paragraph("8,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+
+    // ************** table5 ************
+    const page5Table = new Table({
         rows: 9,
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
     });
 
-    page3Table
+    page5Table
     .getCell(0, 0)
     .add(new Paragraph("0,0"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -294,7 +486,7 @@ const page1Table = new Table({
         color: "auto",
     })
 
-    page3Table
+    page5Table
     .getCell(0, 1)
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -305,55 +497,71 @@ const page1Table = new Table({
     });
 
         // ********column 0*********
-        page1Table
+        page5Table
         .getCell(1, 0)
         .add(new Paragraph("1,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(2, 0)
         .add(new Paragraph("2,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(3, 0)
         .add(new Paragraph("3,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(4, 0)
         .add(new Paragraph("4,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(5, 0)
         .add(new Paragraph("5,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(6, 0)
         .add(new Paragraph("6,0"))
         .setVerticalAlign(VerticalAlign.CENTER);
+        page5Table
+        .getCell(7, 0)
+        .add(new Paragraph("7,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page5Table
+        .getCell(8, 0)
+        .add(new Paragraph("8,0"))
+        .setVerticalAlign(VerticalAlign.CENTER);
 
         // ********column 1*********
-        page1Table
+        page5Table
         .getCell(1, 1)
         .add(new Paragraph("1,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(2, 1)
         .add(new Paragraph("2,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(3, 1)
         .add(new Paragraph("3,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(4, 1)
         .add(new Paragraph("4,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(5, 1)
         .add(new Paragraph("5,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
-        page1Table
+        page5Table
         .getCell(6, 1)
         .add(new Paragraph("6,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page5Table
+        .getCell(7, 1)
+        .add(new Paragraph("7,1"))
+        .setVerticalAlign(VerticalAlign.CENTER);
+        page5Table
+        .getCell(8, 1)
+        .add(new Paragraph("8,1"))
         .setVerticalAlign(VerticalAlign.CENTER);
 
 
@@ -513,11 +721,60 @@ doc.addSection({
             text: "",
             pageBreakBefore: true,
         }),
+        new Paragraph({
+            children: [new TextRun({
+                text:'2.2 OSS KPIs (Cluster Level)',
+                bold: true
+                })
+            ]
+        }),
+        new Paragraph(""),
+        page3Table,
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text:'Drive Test Criteria',
+                bold: true
+                })
+            ]
+        }),
+        new Paragraph("Detailed routes are considered  shared for validation before DT start."),
+        new Paragraph("OSS RFP KPIs commitment to be communicated"),
+        new Paragraph("Below rounds to be considered in DT and targets following DT RFP commitment."),
+        new Paragraph("a) L700 locked connected:"),
+        new Paragraph("Round 1: UE DL + UE CSFB MO."),
+        new Paragraph("Round 2: UE DL 100% load."),
+        new Paragraph("Round 3: UE UL."),
+        new Paragraph("b) L1800 locked connected:"),
+        new Paragraph("Round 4: UE DL + UE CSFB MT."),
+        new Paragraph("Round 5: UE DL 100% load."),
+        new Paragraph("Round 6: UE UL."),
+        new Paragraph("c) Free Connected:"),
+        new Paragraph("Round 7: UE DL + IDLE."),
+
         // ****************Page 7******************************
         new Paragraph({
             text: "",
             pageBreakBefore: true,
         }),
+        new Paragraph("Round 8: (You tube + Web browsing in same round) (Measurements Only)."),
+        new Paragraph("In parallel design validation should be assessed following Nokia RFP commitment and taking into consideration the below KPIs:"),
+        new Paragraph("Within 4db of the best server:"),
+        new Paragraph("% of area with 4 servers or more should be <2%"),
+        new Paragraph("% of area with 2 servers or more should be <35%"),
+        new Paragraph("Within 10db of the best server:"),
+        new Paragraph("% of area with 7 servers or more should be <2%"),
+        new Paragraph("Average and % of achievement for both 700Mhz and 1800Mhz under 100% load following “TE_RFP_Coverage Results_v16” design commitment sheet for (RSRP, RSRQ, SNR, DL and UL Throughput)."),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text:'4 Definitions of KPI Formula',
+                bold: true
+                })
+            ]
+        }),
+        new Paragraph(""),
+        page4Table,
         // ****************Page 8******************************
         new Paragraph({
             text: "",
@@ -547,7 +804,15 @@ doc.addSection({
         }),
         new Paragraph(""),
         new Paragraph("The followings are the general tools configuration of the drive test."),
-        page3Table
+        new Paragraph(""),
+        page5Table,
+        // ****************Page 9******************************
+        new Paragraph({
+            text: "",
+            pageBreakBefore: true,
+        }),
+        new Paragraph(""),
+        new Paragraph("Cluster Site List"),
     ],
 });
 
