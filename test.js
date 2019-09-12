@@ -607,213 +607,221 @@ doc.addSection({
     },
     children: [
         // *****************Page 1**************************
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph({
-            children: [image3, image4],
-            alignment: AlignmentType.CENTER,
-        }),
-        new Paragraph({
-            text: "Cluster Acceptance Report",
-            alignment: AlignmentType.CENTER,
-            heading	: HeadingLevel.TITLE
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        page1Table,
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [image3, image4],
+        //     alignment: AlignmentType.CENTER,
+        // }),
+        // new Paragraph({
+        //     text: "Cluster Acceptance Report",
+        //     alignment: AlignmentType.CENTER,
+        //     heading	: HeadingLevel.TITLE
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // page1Table,
+        ...pages.createPage1(doc),
         // ****************Page 2******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph("Table of Contents"),
-        new Paragraph(""),
-        new Paragraph("1 Scope..............................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
-        new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
-        new Paragraph("3 Drive Test Criteria................................................6"),
-        new Paragraph("4 Definitions of KPI Formula.........................................7"),
-        new Paragraph("5 Drive Test Definition..............................................8"),
-        new Paragraph("5.1 Drive Test device................................................8"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph("Table of Contents"),
+        // new Paragraph(""),
+        // new Paragraph("1 Scope..............................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
+        // new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
+        // new Paragraph("3 Drive Test Criteria................................................6"),
+        // new Paragraph("4 Definitions of KPI Formula.........................................7"),
+        // new Paragraph("5 Drive Test Definition..............................................8"),
+        // new Paragraph("5.1 Drive Test device................................................8"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        ...pages.createPage2(),
         // ****************Page 3******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph("1 Scope..............................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
-        new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
-        new Paragraph("3 Drive Test Criteria................................................6"),
-        new Paragraph("4 Definitions of KPI Formula.........................................7"),
-        new Paragraph("5 Drive Test Definition..............................................8"),
-        new Paragraph("5.1 Drive Test device................................................8"),
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph("1 Scope..............................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
+        // new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
+        // new Paragraph("3 Drive Test Criteria................................................6"),
+        // new Paragraph("4 Definitions of KPI Formula.........................................7"),
+        // new Paragraph("5 Drive Test Definition..............................................8"),
+        // new Paragraph("5.1 Drive Test device................................................8"),
+        ...pages.createPage3(),
         // ****************Page 4******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph("1 Scope..............................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
-        new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
-        new Paragraph("3 Drive Test Criteria................................................6"),
-        new Paragraph("4 Definitions of KPI Formula.........................................7"),
-        new Paragraph("5 Drive Test Definition..............................................8"),
-        new Paragraph("5.1 Drive Test device................................................8"),
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph("1 Scope..............................................................5"),
+        // new Paragraph("2 Acceptance KPIs....................................................5"),
+        // new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
+        // new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
+        // new Paragraph("3 Drive Test Criteria................................................6"),
+        // new Paragraph("4 Definitions of KPI Formula.........................................7"),
+        // new Paragraph("5 Drive Test Definition..............................................8"),
+        // new Paragraph("5.1 Drive Test device................................................8"),
+        ...pages.createPage4(),
         // ****************Page 5******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph({
-            children: [new TextRun({
-                text:'1  Scope',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph("The purpose of this document is to present the Cluster Acceptance standard and Result of TE LTE project. "),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'2 Acceptance KPI',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph("Ninety percent (90%) of sites of the desired cluster should be on air before starting the cluster test. Only agreed special cases of some sites will be considered as standalone sites (SSV) and will be excluded from the cluster acceptance. "),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'2.1 Drive Test KPIs (Cluster Level)',
-                bold: true,
-                indent: 720
-                })
-            ]
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        page2Table,
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'1  Scope',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph("The purpose of this document is to present the Cluster Acceptance standard and Result of TE LTE project. "),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'2 Acceptance KPI',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph("Ninety percent (90%) of sites of the desired cluster should be on air before starting the cluster test. Only agreed special cases of some sites will be considered as standalone sites (SSV) and will be excluded from the cluster acceptance. "),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'2.1 Drive Test KPIs (Cluster Level)',
+        //         bold: true,
+        //         indent: 720
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // page2Table,
+        ...pages.createPage5(),
         // ****************Page 6******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph({
-            children: [new TextRun({
-                text:'2.2 OSS KPIs (Cluster Level)',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        page3Table,
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'Drive Test Criteria',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph("Detailed routes are considered  shared for validation before DT start."),
-        new Paragraph("OSS RFP KPIs commitment to be communicated"),
-        new Paragraph("Below rounds to be considered in DT and targets following DT RFP commitment."),
-        new Paragraph("a) L700 locked connected:"),
-        new Paragraph("Round 1: UE DL + UE CSFB MO."),
-        new Paragraph("Round 2: UE DL 100% load."),
-        new Paragraph("Round 3: UE UL."),
-        new Paragraph("b) L1800 locked connected:"),
-        new Paragraph("Round 4: UE DL + UE CSFB MT."),
-        new Paragraph("Round 5: UE DL 100% load."),
-        new Paragraph("Round 6: UE UL."),
-        new Paragraph("c) Free Connected:"),
-        new Paragraph("Round 7: UE DL + IDLE."),
-
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'2.2 OSS KPIs (Cluster Level)',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // page3Table,
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'Drive Test Criteria',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph("Detailed routes are considered  shared for validation before DT start."),
+        // new Paragraph("OSS RFP KPIs commitment to be communicated"),
+        // new Paragraph("Below rounds to be considered in DT and targets following DT RFP commitment."),
+        // new Paragraph("a) L700 locked connected:"),
+        // new Paragraph("Round 1: UE DL + UE CSFB MO."),
+        // new Paragraph("Round 2: UE DL 100% load."),
+        // new Paragraph("Round 3: UE UL."),
+        // new Paragraph("b) L1800 locked connected:"),
+        // new Paragraph("Round 4: UE DL + UE CSFB MT."),
+        // new Paragraph("Round 5: UE DL 100% load."),
+        // new Paragraph("Round 6: UE UL."),
+        // new Paragraph("c) Free Connected:"),
+        // new Paragraph("Round 7: UE DL + IDLE."),
+        ...pages.createPage6(),
         // ****************Page 7******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph("Round 8: (You tube + Web browsing in same round) (Measurements Only)."),
-        new Paragraph("In parallel design validation should be assessed following Nokia RFP commitment and taking into consideration the below KPIs:"),
-        new Paragraph("Within 4db of the best server:"),
-        new Paragraph("% of area with 4 servers or more should be <2%"),
-        new Paragraph("% of area with 2 servers or more should be <35%"),
-        new Paragraph("Within 10db of the best server:"),
-        new Paragraph("% of area with 7 servers or more should be <2%"),
-        new Paragraph("Average and % of achievement for both 700Mhz and 1800Mhz under 100% load following “TE_RFP_Coverage Results_v16” design commitment sheet for (RSRP, RSRQ, SNR, DL and UL Throughput)."),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'4 Definitions of KPI Formula',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        page4Table,
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph("Round 8: (You tube + Web browsing in same round) (Measurements Only)."),
+        // new Paragraph("In parallel design validation should be assessed following Nokia RFP commitment and taking into consideration the below KPIs:"),
+        // new Paragraph("Within 4db of the best server:"),
+        // new Paragraph("% of area with 4 servers or more should be <2%"),
+        // new Paragraph("% of area with 2 servers or more should be <35%"),
+        // new Paragraph("Within 10db of the best server:"),
+        // new Paragraph("% of area with 7 servers or more should be <2%"),
+        // new Paragraph("Average and % of achievement for both 700Mhz and 1800Mhz under 100% load following “TE_RFP_Coverage Results_v16” design commitment sheet for (RSRP, RSRQ, SNR, DL and UL Throughput)."),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'4 Definitions of KPI Formula',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // page4Table,
+        ...pages.createPage7(),
         // ****************Page 8******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'5 Drive Test Definition',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text:'5.1 Drive Test devices',
-                bold: true
-                })
-            ]
-        }),
-        new Paragraph(""),
-        new Paragraph("The followings are the general tools configuration of the drive test."),
-        new Paragraph(""),
-        page5Table,
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'5 Drive Test Definition',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // new Paragraph(""),
+        // new Paragraph({
+        //     children: [new TextRun({
+        //         text:'5.1 Drive Test devices',
+        //         bold: true
+        //         })
+        //     ]
+        // }),
+        // new Paragraph(""),
+        // new Paragraph("The followings are the general tools configuration of the drive test."),
+        // new Paragraph(""),
+        // page5Table,
+        ...pages.createPage8(),
         // ****************Page 9******************************
-        new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph(""),
-        new Paragraph("Cluster Site List"),
+        // new Paragraph({
+        //     text: "",
+        //     pageBreakBefore: true,
+        // }),
+        // new Paragraph(""),
+        // new Paragraph("Cluster Site List"),
+        ...pages.createPage9(),
     ],
 });
 

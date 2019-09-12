@@ -4,8 +4,10 @@ const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
     AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
 
-    // ************** table3 ************
-    const page3Table = new Table({
+   
+const crearePage1=(obj)=>{
+     // ************** table3 ************
+     const page3Table = new Table({
         rows: 16,
         columns: 2,
         width: 4535,
@@ -100,7 +102,6 @@ const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     .add(new Paragraph("8,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-const crearePage1=(obj)=>{
     return [
         new Paragraph({
             text: "",

@@ -5,37 +5,36 @@ const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
 
 
-// ************** table2 ************
-
-const page2Table = new Table({
-    rows: 21,
-    columns: 2,
-    width: 4535,
-    widthUnitType: WidthType.DXA,
-});
-
-page2Table
-.getCell(0, 0)
-.add(new Paragraph("0,0"))
-.setVerticalAlign(VerticalAlign.CENTER)
-.setShading({
-    fill: "42c5f4",
-    val: ShadingType.PERCENT_95,
-    color: "auto",
-})
-
-page2Table
-.getCell(0, 1)
-.add(new Paragraph("0,1"))
-.setVerticalAlign(VerticalAlign.CENTER)
-.setShading({
-    fill: "42c5f4",
-    val: ShadingType.PERCENT_95,
-    color: "auto",
-});
-
-
 const crearePage5=(obj)=>{
+
+    // ************** table2 ************
+
+    const page2Table = new Table({
+        rows: 21,
+        columns: 2,
+        width: 4535,
+        widthUnitType: WidthType.DXA,
+    });
+
+    page2Table
+    .getCell(0, 0)
+    .add(new Paragraph("0,0"))
+    .setVerticalAlign(VerticalAlign.CENTER)
+    .setShading({
+        fill: "42c5f4",
+        val: ShadingType.PERCENT_95,
+        color: "auto",
+    })
+
+    page2Table
+    .getCell(0, 1)
+    .add(new Paragraph("0,1"))
+    .setVerticalAlign(VerticalAlign.CENTER)
+    .setShading({
+        fill: "42c5f4",
+        val: ShadingType.PERCENT_95,
+        color: "auto",
+    });
 
     for(var i=0; i<21 ;i++){
         page2Table

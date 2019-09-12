@@ -11,37 +11,7 @@ const doc = new Document(undefined, {
     left: 0,
 });
 
-const image3 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
-    // floating: {
-    //     horizontalPosition: {
-    //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-    //         align: HorizontalPositionAlign.RIGHT
-    //     },
-    //     verticalPosition: {
-    //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-    //         align: VerticalPositionAlign.TOP,
-    //     },
-    //     margins: {
-    //         bottom: 201440,
-    //     },
-    // },
-});
 
-const image4 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
-    // floating: {
-    //     horizontalPosition: {
-    //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-    //         align: HorizontalPositionAlign.LEFT
-    //     },
-    //     verticalPosition: {
-    //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-    //         align: VerticalPositionAlign.TOP,
-    //     },
-    //     margins: {
-    //         bottom: 201440,
-    //     },
-    // },
-});
 
 
     // ************** table1 ************
@@ -211,7 +181,39 @@ const image4 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
     .setVerticalAlign(VerticalAlign.CENTER);
 
 
-const crearePage1=(obj)=>{
+const crearePage1=(doc,obj)=>{
+
+    const image3 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
+        // floating: {
+        //     horizontalPosition: {
+        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: HorizontalPositionAlign.RIGHT
+        //     },
+        //     verticalPosition: {
+        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: VerticalPositionAlign.TOP,
+        //     },
+        //     margins: {
+        //         bottom: 201440,
+        //     },
+        // },
+    });
+    
+    const image4 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
+        // floating: {
+        //     horizontalPosition: {
+        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: HorizontalPositionAlign.LEFT
+        //     },
+        //     verticalPosition: {
+        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: VerticalPositionAlign.TOP,
+        //     },
+        //     margins: {
+        //         bottom: 201440,
+        //     },
+        // },
+    });
     return [
         new Paragraph(""),
         new Paragraph(""),
