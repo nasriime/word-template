@@ -23,4 +23,5 @@ module.exports ={
     page10:{ },
     page11:{ },
     page14:{ },
+    page15:{ },
 }

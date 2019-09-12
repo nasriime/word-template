@@ -33,6 +33,7 @@ const createTemplate = (obj)=>{
             ...pages.createPage10(obj.page10),
             ...pages.createPage11(obj.page11),
             ...pages.createPage14(doc, obj.page14),
+            ...pages.createPage15(doc, obj.page15),
         ],
     });
     
