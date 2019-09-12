@@ -4,14 +4,14 @@ const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = req
    
 const createPage6=(obj)=>{
      // ************** table3 ************
-     const page3Table = new Table({
+     const table = new Table({
         rows: 16,
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
     });
 
-    page3Table
+    table
     .getCell(0, 0)
     .add(new Paragraph("0,0"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -21,7 +21,7 @@ const createPage6=(obj)=>{
         color: "auto",
     })
 
-    page3Table
+    table
     .getCell(0, 1)
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -32,69 +32,69 @@ const createPage6=(obj)=>{
     });
 
     // ********column 0*********
-    page3Table
+    table
     .getCell(1, 0)
     .add(new Paragraph("1,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(2, 0)
     .add(new Paragraph("2,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(3, 0)
     .add(new Paragraph("3,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(4, 0)
     .add(new Paragraph("4,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(5, 0)
     .add(new Paragraph("5,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(6, 0)
     .add(new Paragraph("6,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(7, 0)
     .add(new Paragraph("7,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(8, 0)
     .add(new Paragraph("8,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
     // ********column 1*********
-    page3Table
+    table
     .getCell(1, 1)
     .add(new Paragraph("1,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(2, 1)
     .add(new Paragraph("2,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(3, 1)
     .add(new Paragraph("3,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(4, 1)
     .add(new Paragraph("4,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(5, 1)
     .add(new Paragraph("5,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(6, 1)
     .add(new Paragraph("6,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(7, 1)
     .add(new Paragraph("7,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page3Table
+    table
     .getCell(8, 1)
     .add(new Paragraph("8,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
@@ -112,7 +112,7 @@ const createPage6=(obj)=>{
             ]
         }),
         new Paragraph(""),
-        page3Table,
+        table,
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({

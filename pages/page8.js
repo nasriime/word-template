@@ -5,14 +5,14 @@ const { Paragraph, TextRun,Table, WidthType, VerticalAlign, ShadingType} = requi
 const crearePage8=(obj)=>{
     
     // ************** table5 ************
-    const page5Table = new Table({
+    const table = new Table({
         rows: 9,
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
     });
 
-    page5Table
+    table
     .getCell(0, 0)
     .add(new Paragraph("0,0"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -22,7 +22,7 @@ const crearePage8=(obj)=>{
         color: "auto",
     })
 
-    page5Table
+    table
     .getCell(0, 1)
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -33,69 +33,69 @@ const crearePage8=(obj)=>{
     });
 
     // ********column 0*********
-    page5Table
+    table
     .getCell(1, 0)
     .add(new Paragraph("1,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(2, 0)
     .add(new Paragraph("2,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(3, 0)
     .add(new Paragraph("3,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(4, 0)
     .add(new Paragraph("4,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(5, 0)
     .add(new Paragraph("5,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(6, 0)
     .add(new Paragraph("6,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(7, 0)
     .add(new Paragraph("7,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(8, 0)
     .add(new Paragraph("8,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
     // ********column 1*********
-    page5Table
+    table
     .getCell(1, 1)
     .add(new Paragraph("1,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(2, 1)
     .add(new Paragraph("2,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(3, 1)
     .add(new Paragraph("3,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(4, 1)
     .add(new Paragraph("4,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(5, 1)
     .add(new Paragraph("5,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(6, 1)
     .add(new Paragraph("6,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(7, 1)
     .add(new Paragraph("7,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
-    page5Table
+    table
     .getCell(8, 1)
     .add(new Paragraph("8,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
@@ -131,7 +131,7 @@ const crearePage8=(obj)=>{
         new Paragraph(""),
         new Paragraph("The followings are the general tools configuration of the drive test."),
         new Paragraph(""),
-        page5Table,
+        table,
     ]
 }
 

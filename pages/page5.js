@@ -6,14 +6,14 @@ const createPage5=(obj)=>{
 
     // ************** table2 ************
 
-    const page2Table = new Table({
+    const table = new Table({
         rows: 21,
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
     });
 
-    page2Table
+    table
     .getCell(0, 0)
     .add(new Paragraph("0,0"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -23,7 +23,7 @@ const createPage5=(obj)=>{
         color: "auto",
     })
 
-    page2Table
+    table
     .getCell(0, 1)
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -34,13 +34,13 @@ const createPage5=(obj)=>{
     });
 
     for(var i=0; i<21 ;i++){
-        page2Table
+        table
         .getCell(i, 0)
         .Properties.setWidth("20%", WidthType.PCT);
     }
     
     for(var i=0; i<21 ;i++){
-        page2Table
+        table
         .getCell(i, 1)
         .Properties.setWidth("80%", WidthType.PCT);
     }
@@ -85,7 +85,7 @@ const createPage5=(obj)=>{
         }),
         new Paragraph(""),
         new Paragraph(""),
-        page2Table,
+        table,
     ]
 }
 
