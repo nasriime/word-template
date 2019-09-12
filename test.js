@@ -30,6 +30,7 @@ const obj={
     page8:{ },
     page9:{ },
     page10:{ },
+    page11:{ },
 }
 
 const doc = new Document(undefined, {
@@ -64,6 +65,8 @@ doc.addSection({
         ...pages.createPage9(obj.page9),
         // ****Page 10***********
         ...pages.createPage10(obj.page10),
+        // ****Page 11***********
+        ...pages.createPage11(obj.page11),
     ],
 });
 

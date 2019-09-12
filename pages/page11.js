@@ -1,9 +1,9 @@
 const fs = require("fs");
-const { Paragraph, Table, WidthType, HeadingLevel, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
-const createPage9=(obj)=>{
+const createPage11=(obj)=>{
 
-    // ************** table6 ************
+    // ************** table7 ************
 
     const table = new Table({
         rows: 16,
@@ -253,17 +253,9 @@ const createPage9=(obj)=>{
             text: "",
             pageBreakBefore: true,
         }),
-        new Paragraph(""),
-        new Paragraph({
-            text: "Cluster Site List",
-            heading	: HeadingLevel.HEADING_2,
-            bold: true,
-            color:"000000"
-        }),
-        new Paragraph(""),
         table
     ]
 }
 
 
-module.exports = createPage9;
+module.exports = createPage11;
