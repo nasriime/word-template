@@ -200,6 +200,7 @@ const createPage1=(doc,obj)=>{
     .getCell(4, 5)
     .add(new Paragraph("4,5"))
     .setVerticalAlign(VerticalAlign.CENTER);
+    
     return [
         new Paragraph(""),
         new Paragraph(""),

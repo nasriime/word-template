@@ -258,7 +258,6 @@ const createPage9=(obj)=>{
             text: "Cluster Site List",
             heading	: HeadingLevel.HEADING_2,
             bold: true,
-            color:"000000"
         }),
         new Paragraph(""),
         table
