@@ -181,9 +181,9 @@ const doc = new Document(undefined, {
     .setVerticalAlign(VerticalAlign.CENTER);
 
 
-const crearePage1=(doc,obj)=>{
+const createPage1=(doc,obj)=>{
 
-    const image3 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
+    const image3 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
         // floating: {
         //     horizontalPosition: {
         //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
@@ -199,7 +199,7 @@ const crearePage1=(doc,obj)=>{
         // },
     });
     
-    const image4 = Media.addImage(doc, fs.readFileSync("./bg2.jpg"),50,50, {
+    const image4 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
         // floating: {
         //     horizontalPosition: {
         //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
@@ -237,4 +237,4 @@ const crearePage1=(doc,obj)=>{
 }
 
 
-module.exports = crearePage1;
+module.exports = createPage1;

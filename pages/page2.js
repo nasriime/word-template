@@ -4,7 +4,7 @@ const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
     AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
 
-const crearePage2=(obj)=>{
+const createPage2=(obj)=>{
     return [
         new Paragraph({
             text: "",
@@ -35,4 +35,4 @@ const crearePage2=(obj)=>{
 }
 
 
-module.exports = crearePage2;
+module.exports = createPage2;
