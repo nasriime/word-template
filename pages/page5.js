@@ -1,11 +1,8 @@
 const fs = require("fs");
-const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
+const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
 
-const crearePage5=(obj)=>{
+const createPage5=(obj)=>{
 
     // ************** table2 ************
 
@@ -93,4 +90,4 @@ const crearePage5=(obj)=>{
 }
 
 
-module.exports = crearePage5;
+module.exports = createPage5;

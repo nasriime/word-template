@@ -1,18 +1,40 @@
 const fs = require("fs");
-const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
+const { Media, Paragraph, AlignmentType, HeadingLevel, 
+        Table, WidthType, VerticalAlign } = require("docx");
 
-const doc = new Document(undefined, {
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
-});
+const createPage1=(doc,obj)=>{
 
-
-
+    const image3 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
+        // floating: {
+        //     horizontalPosition: {
+        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: HorizontalPositionAlign.RIGHT
+        //     },
+        //     verticalPosition: {
+        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: VerticalPositionAlign.TOP,
+        //     },
+        //     margins: {
+        //         bottom: 201440,
+        //     },
+        // },
+    });
+    
+    const image4 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
+        // floating: {
+        //     horizontalPosition: {
+        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: HorizontalPositionAlign.LEFT
+        //     },
+        //     verticalPosition: {
+        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: VerticalPositionAlign.TOP,
+        //     },
+        //     margins: {
+        //         bottom: 201440,
+        //     },
+        // },
+    });
 
     // ************** table1 ************
 
@@ -159,7 +181,7 @@ const doc = new Document(undefined, {
     .add(new Paragraph("6,3"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-    // column 4
+    // ********column 4*********
     page1Table
     .getCell(3, 4)
     .add(new Paragraph("3,4"))
@@ -169,8 +191,7 @@ const doc = new Document(undefined, {
     .add(new Paragraph("4,4"))
     .setVerticalAlign(VerticalAlign.CENTER);
     
-
-    //column 5
+    // ********column 5*********
     page1Table
     .getCell(3, 5)
     .add(new Paragraph("3,5"))
@@ -179,41 +200,6 @@ const doc = new Document(undefined, {
     .getCell(4, 5)
     .add(new Paragraph("4,5"))
     .setVerticalAlign(VerticalAlign.CENTER);
-
-
-const createPage1=(doc,obj)=>{
-
-    const image3 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
-    
-    const image4 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.LEFT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
     return [
         new Paragraph(""),
         new Paragraph(""),

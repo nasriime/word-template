@@ -3,9 +3,9 @@ const {  Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     HorizontalPositionAlign, VerticalPositionAlign, 
     HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
     AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType} = require("docx");
-    const pages =  require('./pages');
-    const createFooter =  require('./footer');
-    const createHeader =  require('./header');
+    const pages = require('./pages');
+    const createFooter = require('./footer');
+    const createHeader = require('./header');
 
 
 const obj={
