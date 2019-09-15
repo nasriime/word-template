@@ -12,6 +12,7 @@ const createPage11 = require('./page11');
 const createPage14 = require('./page14');
 const createPage15 = require('./page15');
 const createPage16 = require('./page16');
+const createPage17 = require('./page17');
 
 
 module.exports = {
@@ -29,4 +30,5 @@ module.exports = {
     createPage14,
     createPage15,
     createPage16,
+    createPage17,
 }
