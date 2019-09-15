@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
-const createPage17 = (doc, obj)=>{
+const createPage20 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -45,7 +45,7 @@ const createPage17 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.4 DL RSRP Statistics",
+                text: "6.1.5 DL SINR Statistics",
                 bold: true,
                 size: 23
                 })
@@ -57,7 +57,7 @@ const createPage17 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.4.1 RSRP Plot",
+                text: "6.1.5.1 SINR Plot",
                 size: 20
                 })
             ],
@@ -149,4 +149,4 @@ const createPage17 = (doc, obj)=>{
 }
 
 
-module.exports = createPage17;
+module.exports = createPage20;
