@@ -17,9 +17,9 @@ const createPage18 = require('./page18');
 const createPage19 = require('./page19');
 const createPage20 = require('./page20');
 const createPage21 = require('./page21');
-// const createPage22 = require('./page22');
-// const createPage23 = require('./page23');
-// const createPage24 = require('./page24');
+const createPage22 = require('./page22');
+const createPage23 = require('./page23');
+const createPage24 = require('./page24');
 // const createPage25 = require('./page25');
 
 
@@ -43,8 +43,8 @@ module.exports = {
     createPage19,
     createPage20,
     createPage21,
-    // createPage22,
-    // createPage23,
-    // createPage24,
+    createPage22,
+    createPage23,
+    createPage24,
     // createPage25,
 }
