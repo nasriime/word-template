@@ -1,14 +1,16 @@
 // Global object of variables 
 module.exports ={
-    header:{ },
-    footer:{ },
+    header:{
+        headerText: 'LTC Header',
+     },
+    footer:{
+        footerText: 'LTC Footer',
+     },
     page1:{
         image1Url: './bg2.jpg',
         image2Url: './bg2.jpg',
         image3Url: './bg2.jpg',
         image4Url: './bg2.jpg',
-        headerText: 'LTC Header',
-        footerText: 'LTC Footer',
         bodyText: 'Cluster Acceptance Report',
         date: '2019-09-10'
     },

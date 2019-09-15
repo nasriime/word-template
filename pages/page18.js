@@ -1,10 +1,7 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
-const createPage17 = (doc, obj)=>{
+const createPage18 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -48,19 +45,7 @@ const createPage17 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.4 DL RSRP Statistics",
-                bold: true,
-                size: 23
-                })
-            ],
-            indent:{
-                start:650
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.1.4.1 RSRP Plot",
+                text: "6.1.4.2 PDF of legeneds",
                 size: 20
                 })
             ],
@@ -152,4 +137,4 @@ const createPage17 = (doc, obj)=>{
 }
 
 
-module.exports = createPage17;
+module.exports = createPage18;
