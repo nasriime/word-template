@@ -41,21 +41,11 @@ const createPage21 = (doc, obj)=>{
             pageBreakBefore: true,
         }),
         new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.1.7 Intra Frequency Handover Success Rate Analysis",
-                bold: true,
-                size: 23
-                })
-            ],
-            indent:{
-                start:650
-            },
-        }),
+        new Paragraph(""),
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.7.1 Handover Plot",
+                text: "6.1.5.2 PDF of legends",
                 size: 20
                 })
             ],
@@ -65,14 +55,84 @@ const createPage21 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
+            children: [new TextRun({
+                text: "Normal Load",
+                size: 20
+                })
+            ],
+            alignment: AlignmentType.CENTER,
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
             children: [image1],
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
-        // new Paragraph({
-        //     children: [image2],
-        //     alignment: AlignmentType.CENTER,
-        // })
+        new Paragraph({
+            children: [new TextRun({
+                text: "Full Load",
+                size: 20,
+                })
+            ],
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
+            alignment: AlignmentType.CENTER,
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [image2],
+            alignment: AlignmentType.CENTER,
+        })
     ]
 }
 

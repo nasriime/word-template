@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
-const createPage18 = (doc, obj)=>{
+const createPage25 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -40,18 +40,54 @@ const createPage18 = (doc, obj)=>{
             text: "",
             pageBreakBefore: true,
         }),
-        new Paragraph(""),
-        new Paragraph(""),
-        new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.4.2 PDF of legeneds",
+                text: "6.1.8.2 PDF of legends",
                 size: 20
                 })
             ],
             indent:{
                 start:1000
             },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "Full Load",
+                size: 20,
+                })
+            ],
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
+            alignment: AlignmentType.CENTER,
+        }),
+        new Paragraph({
+            children: [image1],
+            alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
         new Paragraph({
@@ -90,51 +126,11 @@ const createPage18 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            children: [image1],
-            alignment: AlignmentType.CENTER,
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "Full Load",
-                size: 20,
-                })
-            ],
-            border: {
-                top: {
-                    color: "auto",
-                    space: 1,
-                    value: "single",
-                    size: 6,
-                },
-                bottom: {
-                    color: "auto",
-                    space: 1,
-                    value: "single",
-                    size: 6,
-                },
-                left: {
-                    color: "auto",
-                    space: 1,
-                    value: "single",
-                    size: 6,
-                },
-                right: {
-                    color: "auto",
-                    space: 1,
-                    value: "single",
-                    size: 6,
-                },
-            },
-            alignment: AlignmentType.CENTER,
-        }),
-        new Paragraph(""),
-        new Paragraph({
             children: [image2],
             alignment: AlignmentType.CENTER,
-        })
+        }),
     ]
 }
 
 
-module.exports = createPage18;
+module.exports = createPage25;
