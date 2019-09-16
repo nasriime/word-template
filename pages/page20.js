@@ -1,7 +1,24 @@
 const fs = require("fs");
-const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType, AlignmentType } = require("docx");
 
 const createPage20 = (doc, obj)=>{
+
+    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
+        // floating: {
+        //     horizontalPosition: {
+        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: HorizontalPositionAlign.RIGHT
+        //     },
+        //     verticalPosition: {
+        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+        //         align: VerticalPositionAlign.TOP,
+        //     },
+        //     margins: {
+        //         bottom: 201440,
+        //     },
+        // },
+    });
+
     // ************** table10 ************
 
     const table1 = new Table({
@@ -233,6 +250,56 @@ const createPage20 = (doc, obj)=>{
         }),
         new Paragraph(""),
         table2,
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.7 Intra Frequency Handover Success Rate Analysis",
+                bold: true,
+                size: 23
+                })
+            ],
+            indent:{
+                start:650
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.7.1 Handover Plot",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [image1],
+            alignment: AlignmentType.CENTER,
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.7.2 Handover Failures Plot",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "No Handover Failures Plot",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1300
+            },
+        }),
     ]
 }
 

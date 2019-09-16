@@ -42,19 +42,7 @@ const createPage22 = (doc, obj)=>{
         }),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.8 Downlink Long Call Results (FTP Test)",
-                bold: true,
-                size: 23
-                })
-            ],
-            indent:{
-                start:650
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.1.8.1 DL Average Physical Throughput Plot",
+                text: "6.1.8.2 PDF of legends",
                 size: 20
                 })
             ],
@@ -62,15 +50,13 @@ const createPage22 = (doc, obj)=>{
                 start:1000
             },
         }),
-        new Paragraph(""),  
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "Normal Load",
-                size: 20
+                text: "Full Load",
+                size: 20,
                 })
             ],
-            alignment: AlignmentType.CENTER,
             border: {
                 top: {
                     color: "auto",
@@ -97,6 +83,7 @@ const createPage22 = (doc, obj)=>{
                     size: 6,
                 },
             },
+            alignment: AlignmentType.CENTER,
         }),
         new Paragraph({
             children: [image1],

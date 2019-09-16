@@ -2,7 +2,7 @@ const fs = require("fs");
 const { Media, Paragraph, TextRun, AlignmentType, Table, 
     WidthType, VerticalAlign, ShadingType } = require("docx");
 
-const createPage23 = (doc, obj)=>{
+const createPage25 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -167,20 +167,7 @@ const createPage23 = (doc, obj)=>{
         }),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.8.3 Table of legend vs. # of samples in each legend vs. percentage of samples of each legend",
-                size: 20
-                })
-            ],
-            indent:{
-                start:1000
-            },
-        }),
-        new Paragraph(""),
-        table,
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.1.8.4 Plot of FTP file DL Radio Access Technology",
+                text: "6.1.9.2 PDF of legends",
                 size: 20
                 })
             ],
@@ -192,9 +179,22 @@ const createPage23 = (doc, obj)=>{
         new Paragraph({
             children: [image1],
             alignment: AlignmentType.CENTER,
-        })
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.9.3 Table of legend vs. # of samples in each legend vs. percentage of samples of each legend",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        table,      
     ]
 }
 
 
-module.exports = createPage23;
+module.exports = createPage25;
