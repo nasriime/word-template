@@ -1,5 +1,6 @@
 const fs = require("fs");
-const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, TextRun, Table, WidthType, VerticalAlign, AlignmentType,
+    ShadingType, TableAnchorType,  RelativeHorizontalPosition, RelativeVerticalPosition } = require("docx");
 
 
 const createPage5=(obj)=>{
@@ -11,6 +12,19 @@ const createPage5=(obj)=>{
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
+        // columnWidths: [1000, 1000],
+        // float: {
+        //     horizontalAnchor: TableAnchorType.MARGIN,
+        //     verticalAnchor: TableAnchorType.MARGIN,
+        //     relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
+        //     relativeVerticalPosition: RelativeVerticalPosition.BOTTOM,
+        // },
+        // margins: {
+        //     top: 100,
+        //     bottom: 100,
+        //     right: 100,
+        //     left: 100,
+        // },
     });
 
     table
@@ -36,12 +50,14 @@ const createPage5=(obj)=>{
     for(var i=0; i<21 ;i++){
         table
         .getCell(i, 0)
+        .add(new Paragraph(i+",1"))
         .Properties.setWidth("20%", WidthType.PCT);
     }
     
     for(var i=0; i<21 ;i++){
         table
         .getCell(i, 1)
+        .add(new Paragraph("0,"+i))
         .Properties.setWidth("80%", WidthType.PCT);
     }
 
@@ -85,6 +101,10 @@ const createPage5=(obj)=>{
         }),
         new Paragraph(""),
         new Paragraph(""),
+        // new Paragraph({
+        //     children: [table],
+        //     alignment: AlignmentType.CENTER,
+        // }),
         table,
     ]
 }

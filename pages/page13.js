@@ -1,7 +1,10 @@
 const fs = require("fs");
-const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
+const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
+    HorizontalPositionAlign, VerticalPositionAlign, 
+    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
+    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
-const createPage21 = (doc, obj)=>{
+const createPage13 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -41,27 +44,29 @@ const createPage21 = (doc, obj)=>{
             pageBreakBefore: true,
         }),
         new Paragraph(""),
+        new Paragraph(""),
         new Paragraph({
-            children: [new TextRun({
-                text: "6.1.7 Intra Frequency Handover Success Rate Analysis",
-                bold: true,
-                size: 23
-                })
-            ],
-            indent:{
-                start:650
-            },
+            text: "6 Drive Test Result",
+            heading	: HeadingLevel.HEADING_2,
+            bold: true,
         }),
         new Paragraph(""),
         new Paragraph({
-            children: [new TextRun({
-                text: "6.1.7.1 Handover Plot",
-                size: 20
-                })
-            ],
+            text: "6.1 Scenario 1: Connected Mode Locked L700",
+            // heading	: HeadingLevel.HEADING_2,
+            bold: true,
             indent:{
-                start:1000
-            },
+                start:300
+            }
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            text: "Prediction of L700 Sites",
+            // heading	: HeadingLevel.HEADING_2,
+            bold: true,
+            bullet:{ 
+                level: 0 
+            }
         }),
         new Paragraph(""),
         new Paragraph({
@@ -69,12 +74,21 @@ const createPage21 = (doc, obj)=>{
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
-        // new Paragraph({
-        //     children: [image2],
-        //     alignment: AlignmentType.CENTER,
-        // })
+        new Paragraph({
+            text: "6.1.1 DL PCI Plot",
+            // heading	: HeadingLevel.HEADING_2,
+            bold: true,
+            indent:{
+                start:320
+            }
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [image2],
+            alignment: AlignmentType.CENTER,
+        })
     ]
 }
 
 
-module.exports = createPage21;
+module.exports = createPage13;

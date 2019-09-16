@@ -1,8 +1,5 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
 const createPage16 = (doc, obj)=>{
 
@@ -48,13 +45,47 @@ const createPage16 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.2 RAT Technology Plot",
-                bold: true,
-                size: 23
+                text: "6.1.4.2 PDF of legeneds",
+                size: 20
                 })
             ],
             indent:{
-                start:650
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "Normal Load",
+                size: 20
+                })
+            ],
+            alignment: AlignmentType.CENTER,
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
             },
         }),
         new Paragraph(""),
@@ -63,17 +94,39 @@ const createPage16 = (doc, obj)=>{
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
-        new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.3 DL EARFCN",
-                bold: true,
-                size: 23
+                text: "Full Load",
+                size: 20,
                 })
             ],
-            indent:{
-                start:650
-            }
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
+            alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
         new Paragraph({

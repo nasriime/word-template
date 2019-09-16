@@ -45,7 +45,19 @@ const createPage18 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.4.2 PDF of legeneds",
+                text: "6.1.5 DL SINR Statistics",
+                bold: true,
+                size: 23
+                })
+            ],
+            indent:{
+                start:650
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.5.1 SINR Plot",
                 size: 20
                 })
             ],

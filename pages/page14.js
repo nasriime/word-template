@@ -1,7 +1,10 @@
 const fs = require("fs");
-const { Media, Paragraph, AlignmentType, HeadingLevel } = require("docx");
+const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
+    HorizontalPositionAlign, VerticalPositionAlign, 
+    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
+    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
-const createPage14=(doc, obj)=>{
+const createPage14 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -42,12 +45,18 @@ const createPage14=(doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph(""),
-        new Paragraph({
-            text: "5.3 Cluster Polygon figure + DT Route figure",
-            heading	: HeadingLevel.HEADING_2,
-            bold: true,
-        }),
         new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "6.1.2 RAT Technology Plot",
+                bold: true,
+                size: 23
+                })
+            ],
+            indent:{
+                start:650
+            },
+        }),
         new Paragraph(""),
         new Paragraph({
             children: [image1],
@@ -56,9 +65,21 @@ const createPage14=(doc, obj)=>{
         new Paragraph(""),
         new Paragraph(""),
         new Paragraph({
+            children: [new TextRun({
+                text: "6.1.3 DL EARFCN",
+                bold: true,
+                size: 23
+                })
+            ],
+            indent:{
+                start:650
+            }
+        }),
+        new Paragraph(""),
+        new Paragraph({
             children: [image2],
             alignment: AlignmentType.CENTER,
-        }),
+        })
     ]
 }
 
