@@ -1,8 +1,5 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
 const createPage15 = (doc, obj)=>{
 
@@ -45,28 +42,63 @@ const createPage15 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph(""),
-        new Paragraph({
-            text: "6 Drive Test Result",
-            heading	: HeadingLevel.HEADING_2,
-            bold: true,
-        }),
         new Paragraph(""),
         new Paragraph({
-            text: "6.1 Scenario 1: Connected Mode Locked L700",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
+            children: [new TextRun({
+                text: "6.1.4 DL RSRP Statistics",
+                bold: true,
+                size: 23
+                })
+            ],
             indent:{
-                start:300
-            }
+                start:650
+            },
         }),
         new Paragraph(""),
         new Paragraph({
-            text: "Prediction of L700 Sites",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
-            bullet:{ 
-                level: 0 
-            }
+            children: [new TextRun({
+                text: "6.1.4.1 RSRP Plot",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "Normal Load",
+                size: 20
+                })
+            ],
+            alignment: AlignmentType.CENTER,
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
         }),
         new Paragraph(""),
         new Paragraph({
@@ -75,12 +107,38 @@ const createPage15 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            text: "6.1.1 DL PCI Plot",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
-            indent:{
-                start:320
-            }
+            children: [new TextRun({
+                text: "Full Load",
+                size: 20,
+                })
+            ],
+            border: {
+                top: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                bottom: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                left: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+                right: {
+                    color: "auto",
+                    space: 1,
+                    value: "single",
+                    size: 6,
+                },
+            },
+            alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
         new Paragraph({
