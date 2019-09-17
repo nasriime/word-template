@@ -31,6 +31,11 @@ const createPage30 = require('./page30');
 const createPage31 = require('./page31');
 const createPage32 = require('./page32');
 const createPage33 = require('./page33');
+const createPage34 = require('./page34');
+const createPage35 = require('./page35');
+const createPage36 = require('./page36');
+const createPage37 = require('./page37');
+const createPage38 = require('./page38');
 
 
 module.exports = {
@@ -67,4 +72,9 @@ module.exports = {
     createPage31,
     createPage32,
     createPage33,
+    createPage34,
+    createPage35,
+    createPage36,
+    createPage37,
+    createPage38,
 }
