@@ -5,7 +5,7 @@ const { Document, Footer, Header, Media, Packer, Paragraph, TextRun,
     AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
 const createPage17 = (doc, obj)=>{
-       // ************** table9 ************
+       // ************** table 9 ************
 
        const table = new Table({
         rows: 10,

@@ -5,7 +5,7 @@ const { Paragraph, TextRun, Table, WidthType, VerticalAlign, AlignmentType,
 
 const createPage5=(obj)=>{
 
-    // ************** table2 ************
+    // ************** table 2 ************
 
     const table = new Table({
         rows: 21,

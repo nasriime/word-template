@@ -2,31 +2,15 @@ const fs = require("fs");
 const { Media, Paragraph, TextRun, AlignmentType, Table, 
     WidthType, VerticalAlign, ShadingType } = require("docx");
 
-const createPage23 = (doc, obj)=>{
+const createPage33 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
-
-    // ************** table 12 ************
+    // ************** table 15 ************
 
     const table = new Table({
         rows: 9,
         columns: 3,
-        width: 4535,
-        widthUnitType: WidthType.DXA,
+        width: 100,
+        widthUnitType: WidthType.PERCENTAGE,
     });
 
 
@@ -167,7 +151,7 @@ const createPage23 = (doc, obj)=>{
         }),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.8.3 Table of legend vs. # of samples in each legend vs. percentage of samples of each legend",
+                text: "6.2.4.3 Table of legend vs. # of samples in each legend vs. percentage of samples of each legend",
                 size: 20
                 })
             ],
@@ -176,25 +160,10 @@ const createPage23 = (doc, obj)=>{
             },
         }),
         new Paragraph(""),
-        table,
         new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.1.8.4 Plot of FTP file DL Radio Access Technology",
-                size: 20
-                })
-            ],
-            indent:{
-                start:1000
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [image1],
-            alignment: AlignmentType.CENTER,
-        })
+        table,      
     ]
 }
 
 
-module.exports = createPage23;
+module.exports = createPage33;

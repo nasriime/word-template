@@ -3,7 +3,7 @@ const { Paragraph, Table, WidthType, VerticalAlign, ShadingType } = require("doc
 
 const createPage10=(obj)=>{
 
-    // ************** table7 ************
+    // ************** table 7 ************
 
     const table = new Table({
         rows: 16,

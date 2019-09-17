@@ -12,7 +12,6 @@ module.exports ={
         image3Url: './bg2.jpg',
         image4Url: './bg2.jpg',
         bodyText: 'Cluster Acceptance Report',
-        date: '2019-09-10'
     },
     page2:{ },
     page3:{ },

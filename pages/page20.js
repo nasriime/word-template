@@ -19,7 +19,7 @@ const createPage20 = (doc, obj)=>{
         // },
     });
 
-    // ************** table10 ************
+    // ************** table 10 ************
 
     const table1 = new Table({
         rows: 10,
@@ -171,7 +171,7 @@ const createPage20 = (doc, obj)=>{
     .add(new Paragraph("9,2"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-    // ************** table11 ************
+    // ************** table 11 ************
 
     const table2 = new Table({
         rows: 3,

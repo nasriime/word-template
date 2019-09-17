@@ -36,7 +36,7 @@ const createPage1=(doc,obj)=>{
         // },
     });
 
-    // ************** table1 ************
+    // ************** table 1 ************
 
     const table = new Table({
         rows: 7,

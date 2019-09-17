@@ -21,7 +21,7 @@ const createPage27 = (doc, obj)=>{
     });
 
 
-    // ************** table12 ************
+    // ************** table 14 ************
 
     const table = new Table({
         rows: 5,

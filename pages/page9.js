@@ -3,7 +3,7 @@ const { Paragraph, Table, WidthType, HeadingLevel, VerticalAlign, ShadingType } 
 
 const createPage9=(obj)=>{
 
-    // ************** table6 ************
+    // ************** table 6 ************
 
     const table = new Table({
         rows: 16,

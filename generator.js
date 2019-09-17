@@ -51,7 +51,9 @@ const createTemplate = (obj)=>{
             // ...pages.createPage28(doc, obj.page28),
             // ...pages.createPage29(doc, obj.page29),
             // ...pages.createPage30(doc, obj.page30),
-            ...pages.createPage31(doc, obj.page31),
+            // ...pages.createPage31(doc, obj.page31),
+            // ...pages.createPage32(doc, obj.page32),
+            ...pages.createPage33(doc, obj.page33),
         ],
     });
     

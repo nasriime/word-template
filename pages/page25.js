@@ -20,7 +20,7 @@ const createPage25 = (doc, obj)=>{
         // },
     });
 
-    // ************** table12 ************
+    // ************** table 13 ************
 
     const table = new Table({
         rows: 9,

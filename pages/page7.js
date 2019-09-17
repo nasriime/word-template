@@ -4,7 +4,7 @@ const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = req
 
 const crearePage7=(obj)=>{
 
-    // ************** table4 ************
+    // ************** table 4 ************
     const table = new Table({
         rows: 20,
         columns: 2,
