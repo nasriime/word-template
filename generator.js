@@ -70,6 +70,8 @@ const createTemplate = (obj)=>{
             // ...pages.createPage47(doc, obj.page47),
             // ...pages.createPage48(doc, obj.page48),
             ...pages.createPage49(doc, obj.page49),
+            ...pages.createPage50(doc, obj.page50),
+            ...pages.createPage51(doc, obj.page51),
         ],
     });
     
