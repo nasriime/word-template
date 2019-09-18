@@ -1,10 +1,7 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
-const createPage45 = (doc, obj)=>{
+const createPage48 = (doc, obj)=>{
 
     const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
         // floating: {
@@ -44,21 +41,11 @@ const createPage45 = (doc, obj)=>{
             pageBreakBefore: true,
         }),
         new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "6.3 Scenario 3: Connected Mode Free Camping",
-                bold: true,
-                size: 23
-                })
-            ],
-            indent:{
-                start:300
-            }
-        }),
+        new Paragraph(""),
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.3.1 DL PCI Plot",
+                text: "6.3.5 DL SINR Statistics",
                 bold: true,
                 size: 23
                 })
@@ -69,19 +56,29 @@ const createPage45 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
+            children: [new TextRun({
+                text: "6.3.5.1 SINR Plot",
+                size: 20
+                })
+            ],
+            indent:{
+                start:1000
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
             children: [image1],
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.3.2 RAT Technology Plot",
-                bold: true,
-                size: 23
+                text: "6.3.5.2 PDF of legeneds",
+                size: 20
                 })
             ],
             indent:{
-                start:650
+                start:1000
             },
         }),
         new Paragraph(""),
@@ -93,4 +90,4 @@ const createPage45 = (doc, obj)=>{
 }
 
 
-module.exports = createPage45;
+module.exports = createPage48;

@@ -43,6 +43,10 @@ const createPage42 = require('./page42');
 const createPage43 = require('./page43');
 const createPage44 = require('./page44');
 const createPage45 = require('./page45');
+const createPage46 = require('./page46');
+const createPage47 = require('./page47');
+const createPage48 = require('./page48');
+const createPage49 = require('./page49');
 
 
 module.exports = {
@@ -91,4 +95,8 @@ module.exports = {
     createPage43,
     createPage44,
     createPage45,
+    createPage46,
+    createPage47,
+    createPage48,
+    createPage49,
 }
