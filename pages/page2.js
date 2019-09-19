@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Paragraph } = require("docx");
+const { Paragraph, TextRun } = require("docx");
 
 const createPage2=(obj)=>{
     return [
@@ -144,6 +144,7 @@ const createPage2=(obj)=>{
                 start:500
             },
         }),
+        new Paragraph(""),
         new Paragraph("2 Acceptance KPIs....................................................5"),
         new Paragraph(""),
         new Paragraph("2 Acceptance KPIs....................................................5"),

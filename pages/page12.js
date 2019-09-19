@@ -50,7 +50,7 @@ const createPage12=(doc, obj)=>{
                 })
             ],
             indent:{
-                start:650
+                start:350
             },
         }),
         new Paragraph(""),

@@ -1,8 +1,5 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Media, Paragraph, AlignmentType, TextRun } = require("docx");
 
 const createPage13 = (doc, obj)=>{
 
@@ -46,26 +43,41 @@ const createPage13 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph(""),
         new Paragraph({
-            text: "6 Drive Test Result",
-            heading	: HeadingLevel.HEADING_2,
-            bold: true,
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            text: "6.1 Scenario 1: Connected Mode Locked L700",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
+            children: [new TextRun({
+                text: "6 Drive Test Result",
+                bold: true,
+                size: 23
+                })
+            ],
             indent:{
-                start:300
-            }
+                start:350
+            },
         }),
         new Paragraph(""),
         new Paragraph({
-            text: "Prediction of L700 Sites",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
+            children: [new TextRun({
+                text: "6.1 Scenario 1: Connected Mode Locked L700",
+                bold: true,
+                size: 20
+                })
+            ],
+            indent:{
+                start:550
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "Prediction of L700 Sites",
+                bold: true,
+                size: 17
+                })
+            ],
             bullet:{ 
-                level: 0 
+                level: 1
+            },
+            indent:{
+                start:1000
             }
         }),
         new Paragraph(""),
@@ -75,12 +87,15 @@ const createPage13 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            text: "6.1.1 DL PCI Plot",
-            // heading	: HeadingLevel.HEADING_2,
-            bold: true,
+            children: [new TextRun({
+                text: "6.1.1 DL PCI Plot",
+                bold: true,
+                size: 20
+                })
+            ],
             indent:{
-                start:320
-            }
+                start:550
+            },
         }),
         new Paragraph(""),
         new Paragraph({
