@@ -22,10 +22,10 @@ const createTemplate = (obj)=>{
         footers: createFooter(obj.footer),
         children: [
             // ...pages.createPage1(doc,obj.page1),
-            ...pages.createPage2(obj.page2),
+            // ...pages.createPage2(obj.page2),
             // ...pages.createPage3(obj.page3),
             // ...pages.createPage4(obj.page4),
-            // ...pages.createPage5(obj.page5),
+            ...pages.createPage5(obj.page5),
             // ...pages.createPage6(obj.page6),
             // ...pages.createPage7(obj.page7),
             // ...pages.createPage8(obj.page8),

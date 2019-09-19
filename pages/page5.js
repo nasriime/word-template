@@ -13,12 +13,12 @@ const createPage5=(obj)=>{
         width: 4535,
         widthUnitType: WidthType.DXA,
         // columnWidths: [1000, 1000],
-        // float: {
-        //     horizontalAnchor: TableAnchorType.MARGIN,
-        //     verticalAnchor: TableAnchorType.MARGIN,
-        //     relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
-        //     relativeVerticalPosition: RelativeVerticalPosition.BOTTOM,
-        // },
+        float: {
+            horizontalAnchor: TableAnchorType.PAGE,
+            verticalAnchor: TableAnchorType.PAGE,
+            relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
+            relativeVerticalPosition: RelativeVerticalPosition.CENTER,
+        },
         // margins: {
         //     top: 100,
         //     bottom: 100,
@@ -67,6 +67,7 @@ const createPage5=(obj)=>{
             text: "",
             pageBreakBefore: true,
         }),
+        table,
         new Paragraph({
             children: [new TextRun({
                 text:'1  Scope',
@@ -98,14 +99,7 @@ const createPage5=(obj)=>{
                 indent: 720
                 })
             ]
-        }),
-        new Paragraph(""),
-        new Paragraph(""),
-        // new Paragraph({
-        //     children: [table],
-        //     alignment: AlignmentType.CENTER,
-        // }),
-        table,
+        })
     ]
 }
 
