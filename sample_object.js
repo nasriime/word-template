@@ -6,6 +6,8 @@ module.exports ={
     footer:{
         footerText: 'LTC Footer',
      },
+    normalLoad: "Normal Load",
+    fullLoad: "Full Load",
     page1:{
         image1Url: './bg2.jpg',
         image2Url: './bg2.jpg',
