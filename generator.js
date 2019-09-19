@@ -21,7 +21,7 @@ const createTemplate = (obj)=>{
         headers: createHeader(doc,obj.header),
         footers: createFooter(obj.footer),
         children: [
-            ...pages.createPage1(doc,obj.page1),
+            // ...pages.createPage1(doc,obj.page1),
             // ...pages.createPage2(obj.page2),
             // ...pages.createPage3(obj.page3),
             // ...pages.createPage4(obj.page4),
@@ -86,7 +86,7 @@ const createTemplate = (obj)=>{
     });
     
     Packer.toBuffer(doc).then((buffer) => {
-        fs.writeFileSync("My Document.docx", buffer);
+        fs.writeFileSync("Nokia.docx", buffer);
     });
 }
 

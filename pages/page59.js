@@ -13,6 +13,9 @@ const createPage59 = (obj)=>{
         widthUnitType: WidthType.PERCENTAGE,
     });
 
+    table.getColumn(1).mergeCells(5, 6);
+    table.getColumn(2).mergeCells(1, 3);
+
 
     // *********column 0*******
     table
@@ -20,7 +23,7 @@ const createPage59 = (obj)=>{
     .add(new Paragraph("0,0"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
-        fill: "ffffff",
+        fill: "42c5f4",
         val: ShadingType.PERCENT_95,
         color: "4f81bd",
     })
@@ -40,6 +43,14 @@ const createPage59 = (obj)=>{
     .getCell(4, 0)
     .add(new Paragraph("4,0"))
     .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(5, 0)
+    .add(new Paragraph("5,0"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(6, 0)
+    .add(new Paragraph("6,0"))
+    .setVerticalAlign(VerticalAlign.CENTER);
 
     // ********column 1********
     table
@@ -47,7 +58,7 @@ const createPage59 = (obj)=>{
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
-        fill: "ffffff",
+        fill: "42c5f4",
         val: ShadingType.PERCENT_95,
         color: "4f81bd",
     })
@@ -67,6 +78,10 @@ const createPage59 = (obj)=>{
     .getCell(4, 1)
     .add(new Paragraph("4,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(5, 1)
+    .add(new Paragraph("5,1"))
+    .setVerticalAlign(VerticalAlign.CENTER);
 
     // *********column 2*******
     table
@@ -74,7 +89,7 @@ const createPage59 = (obj)=>{
     .add(new Paragraph("0,2"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
-        fill: "ffffff",
+        fill: "42c5f4",
         val: ShadingType.PERCENT_95,
         color: "4f81bd",
     })
@@ -83,16 +98,16 @@ const createPage59 = (obj)=>{
     .add(new Paragraph("1,2"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
-    .getCell(2, 2)
-    .add(new Paragraph("2,2"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table
-    .getCell(3, 2)
-    .add(new Paragraph("3,2"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table
     .getCell(4, 2)
     .add(new Paragraph("4,2"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(5, 2)
+    .add(new Paragraph("5,2"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(6, 2)
+    .add(new Paragraph("6,2"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
     // *********column 2*******
@@ -101,7 +116,7 @@ const createPage59 = (obj)=>{
     .add(new Paragraph("0,3"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
-        fill: "ffffff",
+        fill: "42c5f4",
         val: ShadingType.PERCENT_95,
         color: "4f81bd",
     })
@@ -120,6 +135,14 @@ const createPage59 = (obj)=>{
     table
     .getCell(4, 3)
     .add(new Paragraph("4,3"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(5, 3)
+    .add(new Paragraph("5,3"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(6, 3)
+    .add(new Paragraph("6,3"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
    
