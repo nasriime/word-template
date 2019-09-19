@@ -48,11 +48,11 @@ const createPage56 = (doc, obj)=>{
             children: [new TextRun({
                 text: "7.16 Plot of ENB Availbility",
                 bold: true,
-                size: 23
+                size: 20
                 })
             ],
             indent:{
-                start:650
+                start:1000
             },
         }),
         new Paragraph(""),

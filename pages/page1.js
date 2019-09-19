@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Media, Paragraph, AlignmentType, HeadingLevel, 
+const { Media, Paragraph, AlignmentType, HeadingLevel, TextRun,
         Table, WidthType, VerticalAlign } = require("docx");
 
 const createPage1=(doc,obj)=>{
@@ -62,6 +62,7 @@ const createPage1=(doc,obj)=>{
 
     table.getColumn(0).mergeCells(3, 4);
     table.getColumn(2).mergeCells(0, 1);
+    table.getColumn(3).mergeCells(3, 4);
 
     // *********column 0*******
     table
@@ -91,16 +92,6 @@ const createPage1=(doc,obj)=>{
 
     // ********column 1********
     table
-    .getCell(3, 1)
-    .add(new Paragraph("3,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table
-    .getCell(4, 1)
-    .add(new Paragraph("4,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-
-    // *******column 2*******
-    table
     .getCell(0, 1)
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
@@ -113,12 +104,12 @@ const createPage1=(doc,obj)=>{
     .add(new Paragraph("2,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
-    .getCell(3, 2)
-    .add(new Paragraph("3,2"))
+    .getCell(3, 1)
+    .add(new Paragraph("3,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
-    .getCell(4, 2)
-    .add(new Paragraph("4,2"))
+    .getCell(4, 1)
+    .add(new Paragraph("4,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 1)
@@ -129,18 +120,22 @@ const createPage1=(doc,obj)=>{
     .add(new Paragraph("6,1"))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-    // *******column 2*********
+    // *******column 2*******
     table
     .getCell(0, 2)
     .add(new Paragraph("0,2"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
-    .getCell(1, 2)
-    .add(new Paragraph("1,2"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table
     .getCell(2, 2)
     .add(new Paragraph("2,2"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(3, 2)
+    .add(new Paragraph("3,2"))
+    .setVerticalAlign(VerticalAlign.CENTER);
+    table
+    .getCell(4, 2)
+    .add(new Paragraph("4,2"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 2)
@@ -167,10 +162,6 @@ const createPage1=(doc,obj)=>{
     table
     .getCell(3, 3)
     .add(new Paragraph("3,3"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table
-    .getCell(4, 3)
-    .add(new Paragraph("4,3"))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 3)
@@ -208,13 +199,25 @@ const createPage1=(doc,obj)=>{
         new Paragraph(""),
         new Paragraph(""),
         new Paragraph({
-            children: [image1, image2],
-            alignment: AlignmentType.CENTER,
-        }),
-        new Paragraph({
-            text: "Cluster Acceptance Report",
+            children:[new TextRun({
+                text: "Cluster Acceptance Report",
+                bold: true
+            })],
             alignment: AlignmentType.CENTER,
             heading	: HeadingLevel.TITLE
+        }),
+        new Paragraph(""),
+        new Paragraph(""),
+        new Paragraph(""),
+        new Paragraph({
+            children: [
+                image1, 
+                new TextRun({
+                    text: "                         ",
+                }),
+                image2
+            ],
+            alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
         new Paragraph(""),

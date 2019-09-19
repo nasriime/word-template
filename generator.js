@@ -21,7 +21,7 @@ const createTemplate = (obj)=>{
         headers: createHeader(doc,obj.header),
         footers: createFooter(obj.footer),
         children: [
-            // ...pages.createPage1(doc,obj.page1),
+            ...pages.createPage1(doc,obj.page1),
             // ...pages.createPage2(obj.page2),
             // ...pages.createPage3(obj.page3),
             // ...pages.createPage4(obj.page4),
@@ -76,7 +76,12 @@ const createTemplate = (obj)=>{
             // ...pages.createPage53(doc, obj.page53),
             // ...pages.createPage54(doc, obj.page54),
             // ...pages.createPage55(doc, obj.page55),
-            ...pages.createPage56(doc, obj.page56),
+            // ...pages.createPage56(doc, obj.page56),
+            // ...pages.createPage57(doc, obj.page57),
+            // ...pages.createPage58(doc, obj.page58),
+            ...pages.createPage59(obj.page59),
+            // ...pages.createPage60(obj.page60),
+            // ...pages.createPage61(obj.page61),
         ],
     });
     
