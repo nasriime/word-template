@@ -8,14 +8,141 @@ const createPage4=(obj)=>{
             text: "",
             pageBreakBefore: true,
         }),
-        new Paragraph("1 Scope..............................................................5"),
-        new Paragraph("2 Acceptance KPIs....................................................5"),
-        new Paragraph("2.1 Drive Test KPIs (Cluster Level)..................................5"),
-        new Paragraph("2.2 OSS KPIs (Cluster Level).........................................6"),
-        new Paragraph("3 Drive Test Criteria................................................6"),
-        new Paragraph("4 Definitions of KPI Formula.........................................7"),
-        new Paragraph("5 Drive Test Definition..............................................8"),
-        new Paragraph("5.1 Drive Test device................................................8"),
+        new Paragraph({
+            children: [new TextRun({
+                text: "7.14	Plot of Downlink BLER...............................................55",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "7.15	Plot of Uplink BLER...................................................55",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "7.16	Plot of ENB Availbility..................................................56",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "8	Plot of Traffic..........................................................56",
+                size: 20,
+                bold: true
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "9	Optimization Actions Taken................................................57",
+                size: 20,
+                bold: true
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "9.1	Physical and Power Actions................................................57",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "9.2	Paramater Tuning..........................................................59",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "10	Performance Summary.......................................................60",
+                size: 20,
+                bold: true
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "10.1	Drive Test KPIs (Cluster Level).............................................60",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "10.2	OSS KPIs (Cluster Level)......................................................60",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "10.2.1	OSS KPIs (Band 700)......................................................61",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
+                text: "10.2.2	OSS KPIs (Band 1800)......................................................61",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
     ]
 }
 
