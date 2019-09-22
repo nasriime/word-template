@@ -165,20 +165,52 @@ module.exports ={
     page26:{ 
         imageUrl: './images/bg2.jpg',
     },
-    page27:{ },
-    page28:{ },
-    page29:{ },
-    page30:{ },
-    page31:{ },
-    page32:{ },
+    page27:{ 
+        imageUrl: './images/bg2.jpg',
+    },
+    page28:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page29:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
+    page30:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page31:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page32:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
     page33:{ },
-    page34:{ },
-    page35:{ },
+    page34:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
+    page35:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
     page36:{ },
-    page37:{ },
-    page38:{ },
+    page37:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
+    page38:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
     page39:{ },
-    page40:{ },
+    page40:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
     page41:{ },
     page42:{ },
     page43:{ },

@@ -4,24 +4,9 @@ const { Media, Paragraph, TextRun, AlignmentType, Table,
 
 const createPage27 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {});
 
-
-    // ************** table 14 ************
+    // ************** table ************
 
     const table = new Table({
         rows: 5,
@@ -30,11 +15,13 @@ const createPage27 = (doc, obj)=>{
         widthUnitType: WidthType.DXA,
     });
 
-
     // *********column 0*******
     table
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "Voice Call Success Ratio",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -43,47 +30,74 @@ const createPage27 = (doc, obj)=>{
     })
     table
     .getCell(1, 0)
-    .add(new Paragraph("1,0"))
+    .add(new Paragraph({
+        text: "Call Setup Failure Ratio",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(2, 0)
-    .add(new Paragraph("2,0"))
+    .add(new Paragraph({
+        text: "Dropped Call Ratio",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(3, 0)
-    .add(new Paragraph("3,0"))
+    .add(new Paragraph({
+        text: "Call Setup Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(4, 0)
-    .add(new Paragraph("4,0"))
+    .add(new Paragraph({
+        text: "CSFB Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-      // ********column 1********
-      table
-      .getCell(0, 1)
-      .add(new Paragraph("0,1"))
-      .setVerticalAlign(VerticalAlign.CENTER)
-      .setShading({
-          fill: "42c5f4",
-          val: ShadingType.PERCENT_95,
-          color: "auto",
-      })
-      table
-      .getCell(1, 1)
-      .add(new Paragraph("1,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table
-      .getCell(2, 1)
-      .add(new Paragraph("2,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table
-      .getCell(3, 1)
-      .add(new Paragraph("3,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table
-      .getCell(4, 1)
-      .add(new Paragraph("4,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
+     // ********column 1********
+     table
+     .getCell(0, 1)
+     .add(new Paragraph({
+        text: "100%",
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER)
+     .setShading({
+         fill: "42c5f4",
+         val: ShadingType.PERCENT_95,
+         color: "auto",
+     })
+     table
+     .getCell(1, 1)
+     .add(new Paragraph({
+        text: "0%",
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table
+     .getCell(2, 1)
+     .add(new Paragraph({
+        text: "0%",
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table
+     .getCell(3, 1)
+     .add(new Paragraph({
+        text: "4.4 sec",
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table
+     .getCell(4, 1)
+     .add(new Paragraph({
+        text: "6.2 sec",
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
 
    
     return [
@@ -128,7 +142,7 @@ const createPage27 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            children: [image1],
+            children: [image],
             alignment: AlignmentType.CENTER,
         })     
     ]
