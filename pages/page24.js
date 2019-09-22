@@ -4,37 +4,9 @@ const { Media, Paragraph, TextRun, AlignmentType, Table,
 
 const createPage24 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url), 555, 315, {});
     
-    const image2 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.LEFT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url), 555, 315, {});
 
     return [
         new Paragraph({
@@ -59,7 +31,7 @@ const createPage24 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.8 Downlink Long Call Results (FTP Test)",
+                text: "6.1.9 Uplink Long Call Results (FTP Test)",
                 bold: true,
                 size: 23
                 })
@@ -71,7 +43,7 @@ const createPage24 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.1.8.4 Plot of FTP file DL Radio Access Technology",
+                text: "6.1.9.1 UL Average Physical Throughput Plot",
                 size: 20
                 })
             ],

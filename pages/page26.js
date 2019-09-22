@@ -4,7 +4,7 @@ const { Media, Paragraph, TextRun, AlignmentType, Table,
 
 const createPage26 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
+    const image1 = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {
         // floating: {
         //     horizontalPosition: {
         //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
