@@ -4,7 +4,7 @@ const { Paragraph, TextRun,Table, WidthType, VerticalAlign, ShadingType} = requi
 
 const crearePage8=(obj)=>{
     
-    // ************** table 5 ************
+    // ************** table ************
     const table = new Table({
         rows: 9,
         columns: 2,

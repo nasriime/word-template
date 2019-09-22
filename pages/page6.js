@@ -1,5 +1,6 @@
 const fs = require("fs");
-const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType, 
+    TableAnchorType, RelativeHorizontalPosition, RelativeVerticalPosition } = require("docx");
 
    
 const createPage6=(obj)=>{
@@ -9,6 +10,12 @@ const createPage6=(obj)=>{
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
+        float: {
+            horizontalAnchor: TableAnchorType.PAGE,
+            verticalAnchor: TableAnchorType.PAGE,
+            relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
+            relativeVerticalPosition: RelativeVerticalPosition.CENTER,
+        },
     });
 
     table
