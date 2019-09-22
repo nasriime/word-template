@@ -45,9 +45,26 @@ module.exports ={
     page9:{ },
     page10:{ },
     page11:{ },
-    page14:{ },
-    page15:{ },
-    page16:{ },
+    page12:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
+    page13:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page14:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
+    page15:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page16:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
     page17:{ },
     page18:{ },
     page19:{ },
