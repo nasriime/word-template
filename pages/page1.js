@@ -132,11 +132,17 @@ const createPage1=(doc,obj)=>{
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(3, 1)
-    .add(new Paragraph("Start:"))
+    .add(new Paragraph({
+        text: "Start:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(4, 1)
-    .add(new Paragraph("End:"))
+    .add(new Paragraph({
+        text: "End:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 1)
@@ -156,11 +162,17 @@ const createPage1=(doc,obj)=>{
     // *******column 2*******
     table
     .getCell(0, 2)
-    .add(new Paragraph("Clutter Type:"))
+    .add(new Paragraph({
+        text: "Clutter Type:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(2, 2)
-    .add(new Paragraph("Area:"))
+    .add(new Paragraph({
+        text: "Area:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(3, 2)
@@ -178,11 +190,17 @@ const createPage1=(doc,obj)=>{
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 2)
-    .add(new Paragraph("Date:"))
+    .add(new Paragraph({
+        text: "Date:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(6, 2)
-    .add(new Paragraph("Date:"))
+    .add(new Paragraph({
+        text: "Date:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
     // ********column 3*********
@@ -209,7 +227,10 @@ const createPage1=(doc,obj)=>{
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(3, 3)
-    .add(new Paragraph("DT Period(Time)"))
+    .add(new Paragraph({
+        text: "DT Period(Time)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(5, 3)
@@ -229,11 +250,17 @@ const createPage1=(doc,obj)=>{
     // ********column 4*********
     table
     .getCell(3, 4)
-    .add(new Paragraph("Start:"))
+    .add(new Paragraph({
+        text: "Start:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table
     .getCell(4, 4)
-    .add(new Paragraph("End:"))
+    .add(new Paragraph({
+        text: "End:",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     
     // ********column 5*********

@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Paragraph } = require("docx");
+const { Paragraph, TextRun } = require("docx");
     
 
 const createPage4=(obj)=>{
