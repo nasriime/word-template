@@ -197,7 +197,9 @@ module.exports ={
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',
     },
-    page36:{ },
+    page36:{ 
+        imageUrl: './images/bg2.jpg',
+    },
     page37:{
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',
@@ -206,27 +208,74 @@ module.exports ={
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',
      },
-    page39:{ },
+    page39:{
+        imageUrl: './images/bg2.jpg',
+     },
     page40:{
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',
      },
-    page41:{ },
-    page42:{ },
-    page43:{ },
-    page44:{ },
-    page45:{ },
-    page46:{ },
-    page47:{ },
-    page48:{ },
-    page49:{ },
+    page41:{ 
+        imageUrl: './images/bg2.jpg',
+    },
+    page42:{
+        imageUrl: './images/bg2.jpg',
+     },
+    page43:{
+        imageUrl: './images/bg2.jpg',
+     },
+    page44:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page45:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page46:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page47:{
+        imageUrl: './images/bg2.jpg',
+     },
+    page48:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page49:{ 
+        imageUrl: './images/bg2.jpg',
+    },
     page50:{ },
-    page51:{ },
-    page52:{ },
-    page53:{ },
-    page54:{ },
-    page55:{ },
-    page56:{ },
+    page51:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image3Url: './images/bg2.jpg',
+    },
+    page52:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image3Url: './images/bg2.jpg',
+    },
+    page53:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image3Url: './images/bg2.jpg',
+    },
+    page54:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image3Url: './images/bg2.jpg',
+     },
+    page55:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image3Url: './images/bg2.jpg',
+    },
+    page56:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
     page57:{ },
     page58:{ },
     page59:{ },

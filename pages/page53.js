@@ -3,53 +3,11 @@ const { Media, Paragraph, TextRun, AlignmentType } = require("docx");
 
 const createPage53 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 200, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
-    
-    const image2 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 200, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.LEFT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url), 555, 315, {});
 
-    const image3 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 200, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.LEFT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url), 555, 315, {});
+
+    const image3 = Media.addImage(doc, fs.readFileSync(obj.image3Url), 555, 315, {});
 
     return [
         new Paragraph({

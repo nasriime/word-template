@@ -3,23 +3,9 @@ const { Media, Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType,
 
 const createPage49 = (doc, obj)=>{
 
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/PH.jpg"), 555, 315, {
-        // floating: {
-        //     horizontalPosition: {
-        //         relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: HorizontalPositionAlign.RIGHT
-        //     },
-        //     verticalPosition: {
-        //         relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
-        //         align: VerticalPositionAlign.TOP,
-        //     },
-        //     margins: {
-        //         bottom: 201440,
-        //     },
-        // },
-    });
+    const image = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {});
 
-    // ************** table 10 ************
+    // ************** table ************
 
     const table = new Table({
         rows: 10,
@@ -216,7 +202,7 @@ const createPage49 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            children: [image1],
+            children: [image],
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
