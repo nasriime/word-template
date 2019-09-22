@@ -66,14 +66,23 @@ module.exports ={
         image2Url: './images/bg2.jpg',
     },
     page17:{ },
-    page18:{ },
-    page19:{ },
+    page18:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
+    page19:{
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+     },
     page20:{ },
     page21:{
-        image1Url: './bg2.jpg',
-        image2Url: './bg2.jpg',
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
      },
-    page22:{ },
+    page22:{ 
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+    },
     page23:{ },
     page24:{ },
     page25:{ 
