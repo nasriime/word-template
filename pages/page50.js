@@ -1,23 +1,24 @@
 const fs = require("fs");
-const { Media, Paragraph, TextRun, AlignmentType, Table, 
-    WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, TextRun, AlignmentType, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
 const createPage50 = (doc, obj)=>{
 
-    // ************** table 14 ************
+     // ************** table ************
 
-    const table1 = new Table({
+     const table1 = new Table({
         rows: 5,
         columns: 2,
-        width: 4535,
+        width: 6535,
         widthUnitType: WidthType.DXA,
     });
-
 
     // *********column 0*******
     table1
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "Network Delay [Latency ms] (Mean)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -26,63 +27,92 @@ const createPage50 = (doc, obj)=>{
     })
     table1
     .getCell(1, 0)
-    .add(new Paragraph("1,0"))
+    .add(new Paragraph({
+        text: "YouTube Playouts Reproduction without Interruption [%]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(2, 0)
-    .add(new Paragraph("2,0"))
+    .add(new Paragraph({
+        text: "YouTube Playouts with major interruptions [%]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(3, 0)
-    .add(new Paragraph("3,0"))
+    .add(new Paragraph({
+        text: "YouTube Video Start Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(4, 0)
-    .add(new Paragraph("4,0"))
+    .add(new Paragraph({
+        text: "HD YouTube Video Playout Waiting Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-    // ********column 1********
-    table1
-    .getCell(0, 1)
-    .add(new Paragraph("0,1"))
-    .setVerticalAlign(VerticalAlign.CENTER)
-    .setShading({
-        fill: "42c5f4",
-        val: ShadingType.PERCENT_95,
-        color: "auto",
-    })
-    table1
-    .getCell(1, 1)
-    .add(new Paragraph("1,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(2, 1)
-    .add(new Paragraph("2,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(3, 1)
-    .add(new Paragraph("3,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(4, 1)
-    .add(new Paragraph("4,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
+     // ********column 1********
+     table1
+     .getCell(0, 1)
+     .add(new Paragraph({
+        text: obj.table1.cell_0_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER)
+     .setShading({
+         fill: "42c5f4",
+         val: ShadingType.PERCENT_95,
+         color: "auto",
+     })
+     table1
+     .getCell(1, 1)
+     .add(new Paragraph({
+        text: obj.table1.cell_1_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table1
+     .getCell(2, 1)
+     .add(new Paragraph({
+        text: obj.table1.cell_2_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table1
+     .getCell(3, 1)
+     .add(new Paragraph({
+        text: obj.table1.cell_3_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table1
+     .getCell(4, 1)
+     .add(new Paragraph({
+        text: obj.table1.cell_4_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
 
 
-    // ************** table 15 ************
+    // ************** table ************
 
     const table2 = new Table({
         rows: 5,
         columns: 2,
-        width: 4535,
+        width: 6535,
         widthUnitType: WidthType.DXA,
     });
-
 
     // *********column 0*******
     table2
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "Browsing Session Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -91,47 +121,69 @@ const createPage50 = (doc, obj)=>{
     })
     table2
     .getCell(1, 0)
-    .add(new Paragraph("1,0"))
+    .add(new Paragraph({
+        text: "Browsing DNS Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table2
     .getCell(2, 0)
-    .add(new Paragraph("2,0"))
+    .add(new Paragraph({
+        text: "Browsing Service Access Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table2
     .getCell(3, 0)
-    .add(new Paragraph("3,0"))
+    .add(new Paragraph({
+        text: "Browsing Transfer Time [s]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table2
     .getCell(4, 0)
-    .add(new Paragraph("4,0"))
+    .add(new Paragraph({
+        text: "Downloaded Web Page Size [KB]",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
-      // ********column 1********
-      table2
-      .getCell(0, 1)
-      .add(new Paragraph("0,1"))
-      .setVerticalAlign(VerticalAlign.CENTER)
-      .setShading({
-          fill: "42c5f4",
-          val: ShadingType.PERCENT_95,
-          color: "auto",
-      })
-      table2
-      .getCell(1, 1)
-      .add(new Paragraph("1,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table2
-      .getCell(2, 1)
-      .add(new Paragraph("2,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table2
-      .getCell(3, 1)
-      .add(new Paragraph("3,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
-      table2
-      .getCell(4, 1)
-      .add(new Paragraph("4,1"))
-      .setVerticalAlign(VerticalAlign.CENTER);
+     // ********column 1********
+     table2
+     .getCell(0, 1)
+     .add(new Paragraph({
+        text: obj.table2.cell_0_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER)
+     table2
+     .getCell(1, 1)
+     .add(new Paragraph({
+        text: obj.table2.cell_1_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table2
+     .getCell(2, 1)
+     .add(new Paragraph({
+        text: obj.table2.cell_3_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table2
+     .getCell(3, 1)
+     .add(new Paragraph({
+        text: obj.table2.cell_3_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
+     table2
+     .getCell(4, 1)
+     .add(new Paragraph({
+        text: obj.table2.cell_4_1,
+        alignment: AlignmentType.CENTER,
+    }))
+     .setVerticalAlign(VerticalAlign.CENTER);
 
    
     return [

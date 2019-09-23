@@ -29,7 +29,7 @@ const createTemplate = (obj)=>{
             // ...pages.createPage6(obj.page6),
             // ...pages.createPage7(obj.page7),
             // ...pages.createPage8(obj.page8),
-            // ...pages.createPage9(obj.page9),
+            ...pages.createPage9(obj.page9),
             // ...pages.createPage10(obj.page10),
             // ...pages.createPage11(obj.page11),
             // ...pages.createPage12(doc, obj.page12),

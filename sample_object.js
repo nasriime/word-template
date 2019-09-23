@@ -355,7 +355,22 @@ module.exports ={
         cell_7_2: '7,2',
         cell_8_2: '8,2',
     },
-    page50:{ },
+    page50:{
+        table1:{
+            cell_0_1: '0,1',
+            cell_1_1: '1,1',
+            cell_2_1: '2,1',
+            cell_3_1: '3,1',
+            cell_4_1: '4,1',
+        },
+        table2:{
+            cell_0_1: '0,1',
+            cell_1_1: '1,1',
+            cell_2_1: '2,1',
+            cell_3_1: '3,1',
+            cell_4_1: '4,1',
+        }
+     },
     page51:{ 
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',

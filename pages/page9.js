@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Paragraph, Table, WidthType, HeadingLevel, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, Table, WidthType, TextRun, VerticalAlign, ShadingType } = require("docx");
 
 const createPage9=(obj)=>{
 
@@ -255,9 +255,15 @@ const createPage9=(obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            text: "Cluster Site List",
-            heading	: HeadingLevel.HEADING_2,
-            bold: true,
+            children: [new TextRun({
+                text: "Cluster Site List",
+                bold: true,
+                size: 23
+                })
+            ],
+            indent:{
+                start:300
+            },
         }),
         new Paragraph(""),
         table
