@@ -73,28 +73,28 @@ const createPage27 = (doc, obj)=>{
      table
      .getCell(1, 1)
      .add(new Paragraph({
-        text: "0%",
+        text: obj.cell_1_1,
         alignment: AlignmentType.CENTER,
     }))
      .setVerticalAlign(VerticalAlign.CENTER);
      table
      .getCell(2, 1)
      .add(new Paragraph({
-        text: "0%",
+        text: obj.cell_2_1,
         alignment: AlignmentType.CENTER,
     }))
      .setVerticalAlign(VerticalAlign.CENTER);
      table
      .getCell(3, 1)
      .add(new Paragraph({
-        text: "4.4 sec",
+        text: obj.cell_3_1,
         alignment: AlignmentType.CENTER,
     }))
      .setVerticalAlign(VerticalAlign.CENTER);
      table
      .getCell(4, 1)
      .add(new Paragraph({
-        text: "6.2 sec",
+        text: obj.cell_4_1,
         alignment: AlignmentType.CENTER,
     }))
      .setVerticalAlign(VerticalAlign.CENTER);
