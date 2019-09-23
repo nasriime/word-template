@@ -2,9 +2,8 @@ const fs = require("fs");
 const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType , AlignmentType} = require("docx");
 
 const createPage17 = (doc, obj)=>{
-       // ************** table 9 ************
-
-       const table = new Table({
+    // ************** table ************
+    const table = new Table({
         rows: 10,
         columns: 3,
         width: 100,

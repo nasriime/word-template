@@ -5,10 +5,10 @@ const createPage36 = (doc, obj)=>{
 
     const image = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {});
 
-    // ************** table 10 ************
+  // ************** table ************
 
     const table1 = new Table({
-        rows: 10,
+        rows: 9,
         columns: 3,
         width: 4535,
         widthUnitType: WidthType.DXA,
@@ -18,7 +18,10 @@ const createPage36 = (doc, obj)=>{
     // *********column 0*******
     table1
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "Legend",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -27,46 +30,69 @@ const createPage36 = (doc, obj)=>{
     })
     table1
     .getCell(1, 0)
-    .add(new Paragraph("1,0"))
+    .add(new Paragraph({
+        text: "(Min, -5)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(2, 0)
-    .add(new Paragraph("2,0"))
+    .add(new Paragraph({
+        text: "(-5, 0)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(3, 0)
-    .add(new Paragraph("3,0"))
+    .add(new Paragraph({
+        text: "(0, 5)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(4, 0)
-    .add(new Paragraph("4,0"))
+    .add(new Paragraph({
+        text: "(5, 10)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(5, 0)
-    .add(new Paragraph("5,0"))
+    .add(new Paragraph({
+        text: "(10, 15)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(6, 0)
-    .add(new Paragraph("6,0"))
+    .add(new Paragraph({
+        text: "(15, 20)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(7, 0)
-    .add(new Paragraph("7,0"))
+    .add(new Paragraph({
+        text: "(20, 25)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(8, 0)
-    .add(new Paragraph("8,0"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(9, 0)
-    .add(new Paragraph("9,0"))
+    .add(new Paragraph({
+        text: "(25, Max)",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
 
     // ********column 1********
     table1
     .getCell(0, 1)
-    .add(new Paragraph("0,1"))
+    .add(new Paragraph({
+        text: "Number of samples",
+        alignment: AlignmentType.CENTER,
+    }))    
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -75,45 +101,68 @@ const createPage36 = (doc, obj)=>{
     })
     table1
     .getCell(1, 1)
-    .add(new Paragraph("1,1"))
+    .add(new Paragraph({
+        text: obj.cell_1_1,
+        alignment: AlignmentType.CENTER,
+    }))  
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(2, 1)
-    .add(new Paragraph("2,1"))
+    .add(new Paragraph({
+        text: obj.cell_2_1,
+        alignment: AlignmentType.CENTER,
+    }))  
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(3, 1)
-    .add(new Paragraph("3,1"))
+    .add(new Paragraph({
+        text: obj.cell_3_1,
+        alignment: AlignmentType.CENTER,
+    }))  
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(4, 1)
-    .add(new Paragraph("4,1"))
+    .add(new Paragraph({
+        text: obj.cell_4_1,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(5, 1)
-    .add(new Paragraph("5,1"))
+    .add(new Paragraph({
+        text: obj.cell_5_1,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(6, 1)
-    .add(new Paragraph("6,1"))
+    .add(new Paragraph({
+        text: obj.cell_6_1,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(7, 1)
-    .add(new Paragraph("7,1"))
+    .add(new Paragraph({
+        text: obj.cell_7_1,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(8, 1)
-    .add(new Paragraph("8,1"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(9, 1)
-    .add(new Paragraph("9,1"))
+    .add(new Paragraph({
+        text: obj.cell_8_1,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
 
     // *******column 2*******
     table1
     .getCell(0, 2)
-    .add(new Paragraph("0,2"))
+    .add(new Paragraph({
+        text: "Percentage of samples",
+        alignment: AlignmentType.CENTER,
+    }))    
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -122,44 +171,65 @@ const createPage36 = (doc, obj)=>{
     })
     table1
     .getCell(1, 2)
-    .add(new Paragraph("1,2"))
+    .add(new Paragraph({
+        text: obj.cell_1_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(2, 2)
-    .add(new Paragraph("2,2"))
+    .add(new Paragraph({
+        text: obj.cell_2_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(3, 2)
-    .add(new Paragraph("3,2"))
+    .add(new Paragraph({
+        text: obj.cell_3_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(4, 2)
-    .add(new Paragraph("4,2"))
+    .add(new Paragraph({
+        text: obj.cell_4_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(5, 2)
-    .add(new Paragraph("5,2"))
+    .add(new Paragraph({
+        text: obj.cell_5_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(6, 2)
-    .add(new Paragraph("6,2"))
+    .add(new Paragraph({
+        text: obj.cell_6_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(7, 2)
-    .add(new Paragraph("7,2"))
+    .add(new Paragraph({
+        text: obj.cell_7_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
     table1
     .getCell(8, 2)
-    .add(new Paragraph("8,2"))
-    .setVerticalAlign(VerticalAlign.CENTER);
-    table1
-    .getCell(9, 2)
-    .add(new Paragraph("9,2"))
+    .add(new Paragraph({
+        text: obj.cell_8_2,
+        alignment: AlignmentType.CENTER,
+    })) 
     .setVerticalAlign(VerticalAlign.CENTER);
 
-    // ************** table 11 ************
 
-    const table2 = new Table({
+     // ************** table ************
+
+     const table2 = new Table({
         rows: 3,
         columns: 2,
         width: 4535,
@@ -169,7 +239,10 @@ const createPage36 = (doc, obj)=>{
     // *********column 0*******
     table2
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "% of samples with 2 servers and 4dB",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -178,17 +251,26 @@ const createPage36 = (doc, obj)=>{
     })
     table2
     .getCell(1, 0)
-    .add(new Paragraph("1,0"))
+    .add(new Paragraph({
+        text: "% of samples with 4 servers and 4dB",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table2
     .getCell(2, 0)
-    .add(new Paragraph("2,0"))
+    .add(new Paragraph({
+        text: "% of samples with 10 servers and 10dB",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER);
 
      // ********column 1********
      table2
      .getCell(0, 1)
-     .add(new Paragraph("0,1"))
+     .add(new Paragraph({
+        text: "12.23",
+        alignment: AlignmentType.CENTER,
+    }))
      .setVerticalAlign(VerticalAlign.CENTER)
      .setShading({
          fill: "42c5f4",
@@ -197,12 +279,19 @@ const createPage36 = (doc, obj)=>{
      })
      table2
      .getCell(1, 1)
-     .add(new Paragraph("1,1"))
+     .add(new Paragraph({
+        text: "0.47",
+        alignment: AlignmentType.CENTER,
+    }))
      .setVerticalAlign(VerticalAlign.CENTER);
      table2
      .getCell(2, 1)
-     .add(new Paragraph("2,1"))
+     .add(new Paragraph({
+        text: "0",
+        alignment: AlignmentType.CENTER,
+    }))
      .setVerticalAlign(VerticalAlign.CENTER);
+
 
     return [
         new Paragraph({

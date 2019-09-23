@@ -6,7 +6,7 @@ const createPage23 = (doc, obj)=>{
 
     const image = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {});
 
-    // ************** table 12 ************
+    // ************** table ************
 
     const table = new Table({
         rows: 9,
@@ -226,6 +226,7 @@ const createPage23 = (doc, obj)=>{
          alignment: AlignmentType.CENTER,
      })) 
      .setVerticalAlign(VerticalAlign.CENTER);
+     
 
     return [
         new Paragraph({
