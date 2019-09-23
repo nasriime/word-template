@@ -26,7 +26,7 @@ const createPage47 = (doc, obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table
     .getCell(1, 0)
@@ -104,7 +104,7 @@ const createPage47 = (doc, obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table
     .getCell(1, 1)
@@ -181,7 +181,7 @@ const createPage47 = (doc, obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table
     .getCell(1, 2)

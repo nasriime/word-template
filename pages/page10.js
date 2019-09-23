@@ -21,7 +21,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
 
     table
@@ -31,7 +31,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 2)
@@ -40,7 +40,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 3)
@@ -49,7 +49,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
 
     table
@@ -59,7 +59,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
 
     table
@@ -69,7 +69,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 6)
@@ -78,7 +78,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 7)
@@ -87,7 +87,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 8)
@@ -96,7 +96,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 9)
@@ -105,7 +105,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
     table
     .getCell(0, 10)
@@ -114,7 +114,7 @@ const createPage10=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
 
     // *********column 0*******

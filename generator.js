@@ -29,7 +29,7 @@ const createTemplate = (obj)=>{
             // ...pages.createPage6(obj.page6),
             // ...pages.createPage7(obj.page7),
             // ...pages.createPage8(obj.page8),
-            ...pages.createPage9(obj.page9),
+            // ...pages.createPage9(obj.page9),
             // ...pages.createPage10(obj.page10),
             // ...pages.createPage11(obj.page11),
             // ...pages.createPage12(doc, obj.page12),
@@ -79,9 +79,9 @@ const createTemplate = (obj)=>{
             // ...pages.createPage56(doc, obj.page56),
             // ...pages.createPage57(obj.page57),
             // ...pages.createPage58(obj.page58),
-            // ...pages.createPage59(obj.page59),
-            ...pages.createPage60(obj.page60),
-            ...pages.createPage61(obj.page61),
+            ...pages.createPage59(obj.page59),
+            // ...pages.createPage60(obj.page60),
+            // ...pages.createPage61(obj.page61),
         ],
     });
     

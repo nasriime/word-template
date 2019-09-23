@@ -19,7 +19,7 @@ const crearePage7=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
 
     table
@@ -29,7 +29,7 @@ const crearePage7=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
 
     // ********column 0*********

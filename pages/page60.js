@@ -25,7 +25,7 @@ const createPage60 = (obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table1
     .getCell(1, 0)
@@ -109,7 +109,7 @@ const createPage60 = (obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table1
     .getCell(1, 1)
@@ -193,7 +193,7 @@ const createPage60 = (obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table1
     .getCell(1, 2)
@@ -277,7 +277,7 @@ const createPage60 = (obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table1
     .getCell(1, 3)
@@ -361,7 +361,7 @@ const createPage60 = (obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
     table1
     .getCell(1, 4)
@@ -454,7 +454,7 @@ const createPage60 = (obj)=>{
    .setShading({
        fill: "42c5f4",
        val: ShadingType.PERCENT_95,
-       color: "auto",
+       color: "4f81bd",
    })
    table2
    .getCell(1, 0)
@@ -566,7 +566,7 @@ const createPage60 = (obj)=>{
    .setShading({
        fill: "42c5f4",
        val: ShadingType.PERCENT_95,
-       color: "auto",
+       color: "4f81bd",
    })
    table2
    .getCell(1, 1)
@@ -678,7 +678,7 @@ const createPage60 = (obj)=>{
    .setShading({
        fill: "42c5f4",
        val: ShadingType.PERCENT_95,
-       color: "auto",
+       color: "4f81bd",
    })
    table2
    .getCell(1, 2)
@@ -790,7 +790,7 @@ const createPage60 = (obj)=>{
    .setShading({
        fill: "42c5f4",
        val: ShadingType.PERCENT_95,
-       color: "auto",
+       color: "4f81bd",
    })
    table2
    .getCell(1, 3)

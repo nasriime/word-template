@@ -34,7 +34,7 @@ const createPage5=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     })
 
     table
@@ -44,7 +44,7 @@ const createPage5=(obj)=>{
     .setShading({
         fill: "42c5f4",
         val: ShadingType.PERCENT_95,
-        color: "auto",
+        color: "4f81bd",
     });
 
     for(var i=0; i<21 ;i++){
