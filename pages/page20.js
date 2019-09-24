@@ -3,7 +3,27 @@ const { Media, Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType,
 
 const createPage20 = (doc, obj)=>{
 
-    const image = Media.addImage(doc, fs.readFileSync(obj.imageUrl), 555, 315, {});
+    const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url), 555, 315, {});
+    const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url), 555, 315, {});
+    const image2Err = ()=> {
+        if(obj.image2Error === ''){
+            return   new Paragraph({
+                children: [image2],
+                alignment: AlignmentType.CENTER,
+            })
+        }
+
+        return  new Paragraph({
+                    children: [new TextRun({
+                        text: obj.image2Error,
+                        size: 20
+                        })
+                    ],
+                    indent:{
+                        start:1300
+                    },
+                })
+    }
 
     // ************** table ************
 
@@ -359,7 +379,7 @@ const createPage20 = (doc, obj)=>{
         }),
         new Paragraph(""),
         new Paragraph({
-            children: [image],
+            children: [image1],
             alignment: AlignmentType.CENTER,
         }),
         new Paragraph(""),
@@ -374,16 +394,7 @@ const createPage20 = (doc, obj)=>{
             },
         }),
         new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "No Handover Failures Plot",
-                size: 20
-                })
-            ],
-            indent:{
-                start:1300
-            },
-        }),
+        image2Err()
     ]
 }
 

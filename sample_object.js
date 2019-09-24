@@ -110,7 +110,9 @@ module.exports ={
         image2Url: './images/bg2.jpg',
      },
     page20:{
-        imageUrl: './images/bg2.jpg',
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image2Error:'No Handover Failures Plot',
         cell_1_1: '1,1',
         cell_2_1: '2,1',
         cell_3_1: '3,1',
@@ -237,7 +239,9 @@ module.exports ={
         image2Url: './images/bg2.jpg',
     },
     page36:{ 
-        imageUrl: './images/bg2.jpg',
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image2Error:'No Handover Failures Plot',
         cell_1_1: '1,1',
         cell_2_1: '2,1',
         cell_3_1: '3,1',
@@ -353,7 +357,9 @@ module.exports ={
         image2Url: './images/bg2.jpg',
     },
     page49:{ 
-        imageUrl: './images/bg2.jpg',
+        image1Url: './images/bg2.jpg',
+        image2Url: './images/bg2.jpg',
+        image2Error:'No Handover Failures Plot',
         cell_1_1: '1,1',
         cell_2_1: '2,1',
         cell_3_1: '3,1',
