@@ -20,7 +20,10 @@ const createPage59 = (obj)=>{
     // *********column 0*******
     table
     .getCell(0, 0)
-    .add(new Paragraph("Paramter Name"))
+    .add(new Paragraph({
+        text: "Paramter Name",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -73,7 +76,10 @@ const createPage59 = (obj)=>{
     // ********column 1********
     table
     .getCell(0, 1)
-    .add(new Paragraph("Action"))
+    .add(new Paragraph({
+        text: "Action",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -119,7 +125,10 @@ const createPage59 = (obj)=>{
     // *********column 2*******
     table
     .getCell(0, 2)
-    .add(new Paragraph("Observation"))
+    .add(new Paragraph({
+        text: "Observation",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -158,7 +167,10 @@ const createPage59 = (obj)=>{
     // *********column 3*******
     table
     .getCell(0, 3)
-    .add(new Paragraph("Date"))
+    .add(new Paragraph({
+        text: "Date",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",

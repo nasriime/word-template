@@ -1,8 +1,8 @@
 const fs = require("fs");
-const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType, AlignmentType } = require("docx");
 
 const createPage57 = (obj)=>{
-        // ************** table 5 ************
+        // ************** table ************
         const table = new Table({
             rows: 69,
             columns: 6,
@@ -10,53 +10,25 @@ const createPage57 = (obj)=>{
             widthUnitType: WidthType.DXA,
         });
     
-        // ********column 0*********
+        // ********row 0*********
         table
         .getCell(0, 0)
-        .add(new Paragraph("0,0"))
+        .add(new Paragraph({
+            text: "MRBTS",
+            alignment: AlignmentType.CENTER,
+        }))
         .setVerticalAlign(VerticalAlign.CENTER)
         .setShading({
             fill: "42c5f4",
             val: ShadingType.PERCENT_95,
             color: "4f81bd",
         });
-        table
-        .getCell(1, 0)
-        .add(new Paragraph("1,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(2, 0)
-        .add(new Paragraph("2,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(3, 0)
-        .add(new Paragraph("3,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(4, 0)
-        .add(new Paragraph("4,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(5, 0)
-        .add(new Paragraph("5,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(6, 0)
-        .add(new Paragraph("6,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(7, 0)
-        .add(new Paragraph("7,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(8, 0)
-        .add(new Paragraph("8,0"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-    
-        // ********column 1*********
         table
         .getCell(0, 1)
-        .add(new Paragraph("0,1"))
+        .add(new Paragraph({
+            text: "LNBTS",
+            alignment: AlignmentType.CENTER,
+        }))
         .setVerticalAlign(VerticalAlign.CENTER)
         .setShading({
             fill: "42c5f4",
@@ -64,37 +36,115 @@ const createPage57 = (obj)=>{
             color: "4f81bd",
         });
         table
-        .getCell(1, 1)
-        .add(new Paragraph("1,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
+        .getCell(0, 2)
+        .add(new Paragraph({
+            text: "LNCEL",
+            alignment: AlignmentType.CENTER,
+        }))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "4f81bd",
+        });
         table
-        .getCell(2, 1)
-        .add(new Paragraph("2,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
+        .getCell(0, 3)
+        .add(new Paragraph({
+            text: "Angle",
+            alignment: AlignmentType.CENTER,
+        }))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "4f81bd",
+        });
         table
-        .getCell(3, 1)
-        .add(new Paragraph("3,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
+        .getCell(0, 4)
+        .add(new Paragraph({
+            text: "Action",
+            alignment: AlignmentType.CENTER,
+        }))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "4f81bd",
+        });
         table
-        .getCell(4, 1)
-        .add(new Paragraph("4,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(5, 1)
-        .add(new Paragraph("5,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(6, 1)
-        .add(new Paragraph("6,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(7, 1)
-        .add(new Paragraph("7,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
-        table
-        .getCell(8, 1)
-        .add(new Paragraph("8,1"))
-        .setVerticalAlign(VerticalAlign.CENTER);
+        .getCell(0, 5)
+        .add(new Paragraph({
+            text: "Action Date",
+            alignment: AlignmentType.CENTER,
+        }))
+        .setVerticalAlign(VerticalAlign.CENTER)
+        .setShading({
+            fill: "42c5f4",
+            val: ShadingType.PERCENT_95,
+            color: "4f81bd",
+        });
+
+        // ********column 0*********
+        for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 0)
+            .add(new Paragraph({
+                text: i+",0",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
+        // ********column 1*********
+        for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 1)
+            .add(new Paragraph({
+                text: i+",1",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
+        // ********column 2*********
+        for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 2)
+            .add(new Paragraph({
+                text: i+",2",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
+        // ********column 3*********
+        for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 3)
+            .add(new Paragraph({
+                text: i+",3",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
+
+        // ********column 4*********
+        for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 4)
+            .add(new Paragraph({
+                text: i+",4",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
+       // ********column 5*********
+       for(var i=1; i<69 ;i++){
+            table
+            .getCell(i, 5)
+            .add(new Paragraph({
+                text: i+",5",
+                alignment: AlignmentType.CENTER,
+            }))
+            .setVerticalAlign(VerticalAlign.CENTER);
+        }
 
     return [
         new Paragraph({

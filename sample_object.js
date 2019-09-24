@@ -43,7 +43,7 @@ module.exports ={
         cell_8_1: '8,1',
     },
     page9:{ 
-        sitesListLength:'',
+        sitesListLength: 40,
         sitesList:[
             {
                 site: '',
@@ -416,7 +416,19 @@ module.exports ={
         image1Url: './images/bg2.jpg',
         image2Url: './images/bg2.jpg',
     },
-    page57:{ },
+    page57:{
+        dataLength: 40,
+        actions:[
+            {
+                MRBTS: '',
+                LNBTS: '',
+                LNCEL: '',
+                Action: '',
+                ActionDate: ''
+            }
+        ]
+
+     },
     page58:{ },
     page59:{ 
         cell_1_0: '1,0',
