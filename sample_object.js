@@ -42,7 +42,23 @@ module.exports ={
         cell_7_1: '7,1',
         cell_8_1: '8,1',
     },
-    page9:{ },
+    page9:{ 
+        sitesListLength:'',
+        sitesList:[
+            {
+                site: '',
+                callId: '',
+                band: '',
+                longitude: '',
+                latitude: '',
+                height: '',
+                azimuth: '',
+                eTilt: '',
+                power: '',
+                rsBoost: ''
+            }
+        ]
+    },
     page10:{ },
     page11:{ },
     page12:{
@@ -508,11 +524,5 @@ module.exports ={
             cell_13_3: '13,3',
             cell_14_3: '14,3',
         }
-     },
-    page62:{ },
-    page63:{ },
-    page64:{ },
-    page65:{ },
-    page66:{ },
-    page67:{ },
+     }
 }

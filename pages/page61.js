@@ -561,7 +561,7 @@ const createPage61 = (obj)=>{
     }))
     .setVerticalAlign(VerticalAlign.CENTER);
     table2
-    .getCell(12, 0)auto
+    .getCell(12, 0)
     .add(new Paragraph({
     text: "12",
     alignment: AlignmentType.CENTER,
