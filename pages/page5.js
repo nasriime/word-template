@@ -5,10 +5,33 @@ const { Paragraph, TextRun, Table, WidthType, VerticalAlign, AlignmentType,
 
 const createPage5=(obj)=>{
 
-    // ************** table 2 ************
+    const KPIs = [
+        "",
+        "Serving RSRP",
+        "Serving RSRQ",
+        "Serving RS SINR",
+        "Serving Channel RSSI",
+        "CQI",
+        "Attach Success Rate",
+        "Paging Success Rate",
+        "RRC Connection Setup Success Rate",
+        "ERAB Setup Success Rate",
+        "CSFB Setup Success Rate",
+        "RRC Connection Drop Rate",
+        "Bearer Connection Drop Rate",
+        "LTE Intra-frequency HO Success Rate",
+        "LTE Inter-frequency HO Success Rate",
+        "CSFB Success Rate via Redirect",
+        "Average Downlink Application User Throughput @ 10 MHz",
+        "Average Uplink Application User Throughput @ 10 MHz",
+        "Average Downlink Application User Throughput @ 5 MHz",
+        "Average Uplink Application User Throughput @ 5 MHz",
+    ];
+
+    // ************** table ************
 
     const table = new Table({
-        rows: 21,
+        rows: 20,
         columns: 2,
         width: 4535,
         widthUnitType: WidthType.DXA,
@@ -29,7 +52,10 @@ const createPage5=(obj)=>{
 
     table
     .getCell(0, 0)
-    .add(new Paragraph("0,0"))
+    .add(new Paragraph({
+        text: "S/N",
+        alignment: AlignmentType.CENTER,
+    }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -39,6 +65,10 @@ const createPage5=(obj)=>{
 
     table
     .getCell(0, 1)
+    .add(new Paragraph({
+        text: "OSS KPI ( Cluster Level)",
+        alignment: AlignmentType.CENTER,
+    }))
     .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
@@ -47,17 +77,23 @@ const createPage5=(obj)=>{
         color: "4f81bd",
     });
 
-    for(var i=0; i<21 ;i++){
+    for(var i=1; i<20 ;i++){
         table
         .getCell(i, 0)
-        .add(new Paragraph(i+",1"))
+        .add(new Paragraph({
+            text: "+i+",
+            alignment: AlignmentType.CENTER,
+        }))
         .Properties.setWidth("20%", WidthType.PCT);
     }
     
-    for(var i=0; i<21 ;i++){
+    for(var i=1; i<20 ;i++){
         table
         .getCell(i, 1)
-        .add(new Paragraph("0,"+i))
+        .add(new Paragraph({
+            text: KPIs[i],
+            alignment: AlignmentType.CENTER,
+        }))
         .Properties.setWidth("80%", WidthType.PCT);
     }
 

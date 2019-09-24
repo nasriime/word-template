@@ -6,8 +6,8 @@ const createPage57 = (obj)=>{
         const table = new Table({
             rows: 69,
             columns: 6,
-            width: 4535,
-            widthUnitType: WidthType.DXA,
+            width: 100,
+            widthUnitType: WidthType.PERCENTAGE,
         });
     
         // ********row 0*********

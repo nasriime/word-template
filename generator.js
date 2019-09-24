@@ -1,14 +1,21 @@
 const fs = require("fs");
-const { Document, Footer, Header, Media, Packer, Paragraph, TextRun, 
-    HorizontalPositionAlign, VerticalPositionAlign, 
-    HorizontalPositionRelativeFrom, VerticalPositionRelativeFrom, RelativeHorizontalPosition,
-    AlignmentType, HeadingLevel, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
+const { Document, Packer } = require("docx");
 const pages = require('./pages');
 const createFooter = require('./footer');
 const createHeader = require('./header');
 const obj = require('./sample_object');
 
-const createTemplate = (obj)=>{
+/**
+ *
+ *  Create Template
+ *
+ * @param {Object} obj
+ * @param {string} path
+ *
+ * @returns {Promise<void>}
+ */
+
+const createTemplate = (obj, path)=>{
 
     const doc = new Document(undefined, {
         top: 0,
@@ -25,7 +32,7 @@ const createTemplate = (obj)=>{
             // ...pages.createPage2(obj.page2),
             // ...pages.createPage3(obj.page3),
             // ...pages.createPage4(obj.page4),
-            // ...pages.createPage5(obj.page5),
+            ...pages.createPage5(obj.page5),
             // ...pages.createPage6(obj.page6),
             // ...pages.createPage7(obj.page7),
             // ...pages.createPage8(obj.page8),
@@ -77,16 +84,16 @@ const createTemplate = (obj)=>{
             // ...pages.createPage54(doc, obj.page54),
             // ...pages.createPage55(doc, obj.page55),
             // ...pages.createPage56(doc, obj.page56),
-            ...pages.createPage57(obj.page57),
+            // ...pages.createPage57(obj.page57),
             // ...pages.createPage58(obj.page58),
-            ...pages.createPage59(obj.page59),
+            // ...pages.createPage59(obj.page59),
             // ...pages.createPage60(obj.page60),
             // ...pages.createPage61(obj.page61),
         ],
     });
     
     Packer.toBuffer(doc).then((buffer) => {
-        fs.writeFileSync("Nokia.docx", buffer);
+        fs.writeFileSync(path, buffer);
     });
 }
 
