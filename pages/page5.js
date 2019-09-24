@@ -36,12 +36,12 @@ const createPage5=(obj)=>{
         width: 4535,
         widthUnitType: WidthType.DXA,
         // columnWidths: [1000, 1000],
-        float: {
-            horizontalAnchor: TableAnchorType.PAGE,
-            verticalAnchor: TableAnchorType.PAGE,
-            relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
-            relativeVerticalPosition: RelativeVerticalPosition.CENTER,
-        },
+        // float: {
+        //     horizontalAnchor: TableAnchorType.PAGE,
+        //     verticalAnchor: TableAnchorType.PAGE,
+        //     relativeHorizontalPosition: RelativeHorizontalPosition.CENTER,
+        //     relativeVerticalPosition: RelativeVerticalPosition.CENTER,
+        // },
         // margins: {
         //     top: 100,
         //     bottom: 100,
@@ -69,7 +69,6 @@ const createPage5=(obj)=>{
         text: "OSS KPI ( Cluster Level)",
         alignment: AlignmentType.CENTER,
     }))
-    .add(new Paragraph("0,1"))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
         fill: "42c5f4",
@@ -81,7 +80,7 @@ const createPage5=(obj)=>{
         table
         .getCell(i, 0)
         .add(new Paragraph({
-            text: "+i+",
+            text: ""+i+"",
             alignment: AlignmentType.CENTER,
         }))
         .Properties.setWidth("20%", WidthType.PCT);
@@ -103,7 +102,6 @@ const createPage5=(obj)=>{
             text: "",
             pageBreakBefore: true,
         }),
-        table,
         new Paragraph({
             children: [new TextRun({
                 text:'1  Scope',
@@ -135,7 +133,9 @@ const createPage5=(obj)=>{
                 indent: 720
                 })
             ]
-        })
+        }),
+        new Paragraph(""),
+        table,
     ]
 }
 
