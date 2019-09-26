@@ -83,6 +83,7 @@ const createPage5=(obj)=>{
             text: ""+i+"",
             alignment: AlignmentType.CENTER,
         }))
+        .setVerticalAlign(VerticalAlign.CENTER)
         .Properties.setWidth("20%", WidthType.PCT);
     }
     
@@ -93,6 +94,7 @@ const createPage5=(obj)=>{
             text: KPIs[i],
             alignment: AlignmentType.CENTER,
         }))
+        .setVerticalAlign(VerticalAlign.CENTER)
         .Properties.setWidth("80%", WidthType.PCT);
     }
 

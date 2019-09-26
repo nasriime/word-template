@@ -34,7 +34,7 @@ const createTemplate = (obj, docPath) => {
         // ...pages.createPage4(obj.page4),
         ...pages.createPage5(obj.page5),
         ...pages.createPage6(obj.page6),
-        // ...pages.createPage7(obj.page7),
+        ...pages.createPage7(obj.page7),
         // ...pages.createPage8(obj.page8),
         // ...pages.createPage9(obj.page9),
         // ...pages.createPage10(obj.page10),
