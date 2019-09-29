@@ -45,6 +45,10 @@ const createPage18 = (doc, obj)=>{
                 })
             ],
             alignment: AlignmentType.CENTER,
+            indent:{
+                start:3500,
+                end:3500
+            },
             border: {
                 top: {
                     color: "auto",
@@ -111,6 +115,10 @@ const createPage18 = (doc, obj)=>{
                 },
             },
             alignment: AlignmentType.CENTER,
+            indent:{
+                start:3500,
+                end:3500
+            },
         }),
         new Paragraph(""),
         new Paragraph({

@@ -71,6 +71,10 @@ const createPage15 = (doc, obj)=>{
                     size: 6,
                 },
             },
+            indent:{
+                start:3500,
+                end:3500
+            },
         }),
         new Paragraph(""),
         new Paragraph({
@@ -111,6 +115,10 @@ const createPage15 = (doc, obj)=>{
                 },
             },
             alignment: AlignmentType.CENTER,
+            indent:{
+                start:3500,
+                end:3500
+            },
         }),
         new Paragraph(""),
         new Paragraph({

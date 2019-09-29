@@ -42,14 +42,14 @@ const createTemplate = (obj, docPath) => {
         // ...pages.createPage12(doc, obj.page12),
         // ...pages.createPage13(doc, obj.page13),
         // ...pages.createPage14(doc, obj.page14),
-        // ...pages.createPage15(doc, obj.page15),
-        // ...pages.createPage16(doc, obj.page16),
+        ...pages.createPage15(doc, obj.page15),
+        ...pages.createPage16(doc, obj.page16),
         // ...pages.createPage17(doc, obj.page17),
-        // ...pages.createPage18(doc, obj.page18),
-        // ...pages.createPage19(doc, obj.page19),
-        ...pages.createPage20(doc, obj.page20),
-        // ...pages.createPage21(doc, obj.page21),
-        // ...pages.createPage22(doc, obj.page22),
+        ...pages.createPage18(doc, obj.page18),
+        ...pages.createPage19(doc, obj.page19),
+        // ...pages.createPage20(doc, obj.page20),
+        ...pages.createPage21(doc, obj.page21),
+        ...pages.createPage22(doc, obj.page22),
         // ...pages.createPage23(doc, obj.page23),
         // ...pages.createPage24(doc, obj.page24),
         // ...pages.createPage25(doc, obj.page25),
@@ -58,14 +58,14 @@ const createTemplate = (obj, docPath) => {
         // ...pages.createPage28(doc, obj.page28),
         // ...pages.createPage29(doc, obj.page29),
         // ...pages.createPage30(doc, obj.page30),
-        // ...pages.createPage31(doc, obj.page31),
-        // ...pages.createPage32(doc, obj.page32),
+        ...pages.createPage31(doc, obj.page31),
+        ...pages.createPage32(doc, obj.page32),
         // ...pages.createPage33(doc, obj.page33),
-        // ...pages.createPage34(doc, obj.page34),
-        // ...pages.createPage35(doc, obj.page35),
+        ...pages.createPage34(doc, obj.page34),
+        ...pages.createPage35(doc, obj.page35),
         // ...pages.createPage36(doc, obj.page36),
-        // ...pages.createPage37(doc, obj.page37),
-        // ...pages.createPage38(doc, obj.page38),
+        ...pages.createPage37(doc, obj.page37),
+        ...pages.createPage38(doc, obj.page38),
         // ...pages.createPage39(doc, obj.page39),
         // ...pages.createPage40(doc, obj.page40),
         // ...pages.createPage41(doc, obj.page41),
@@ -76,7 +76,7 @@ const createTemplate = (obj, docPath) => {
         // ...pages.createPage46(doc, obj.page46),
         // ...pages.createPage47(doc, obj.page47),
         // ...pages.createPage48(doc, obj.page48),
-        ...pages.createPage49(doc, obj.page49),
+        // ...pages.createPage49(doc, obj.page49),
         // ...pages.createPage50(doc, obj.page50),
         // ...pages.createPage51(doc, obj.page51),
         // ...pages.createPage52(doc, obj.page52),
@@ -103,7 +103,7 @@ const createTemplate = (obj, docPath) => {
   });
 };
 
-createTemplate(obj,'./test.docx')
+createTemplate(obj,'./nokia.docx')
   .then(console.log)
   .catch(console.error);
 
