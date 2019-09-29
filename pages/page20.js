@@ -25,10 +25,11 @@ const createPage20 = (doc, obj) => {
     315,
     {},
   );
-  const image2Err = () => {
-    if (obj.image2Error === '') {
+
+  const imageErr = (err, image) => {
+    if (err === '') {
       return new Paragraph({
-        children: [image2],
+        children: [image],
         alignment: AlignmentType.CENTER,
       });
     }
@@ -36,7 +37,7 @@ const createPage20 = (doc, obj) => {
     return new Paragraph({
       children: [
         new TextRun({
-          text: obj.image2Error,
+          text: err,
           size: 20,
         }),
       ],
@@ -468,10 +469,7 @@ const createPage20 = (doc, obj) => {
       },
     }),
     new Paragraph(''),
-    new Paragraph({
-      children: [image1],
-      alignment: AlignmentType.CENTER,
-    }),
+    imageErr(obj.image1Error, image1),
     new Paragraph(''),
     new Paragraph({
       children: [
@@ -485,7 +483,7 @@ const createPage20 = (doc, obj) => {
       },
     }),
     new Paragraph(''),
-    image2Err(),
+    imageErr(obj.image2Error, image2),
   ];
 };
 

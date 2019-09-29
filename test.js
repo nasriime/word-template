@@ -1,38 +1,51 @@
 const fs = require("fs");
-const { Document,
-    Packer,
-    Paragraph,
-    RelativeHorizontalPosition,
-    RelativeVerticalPosition,
-    Table,
-    TableAnchorType,
-    TableLayoutType,
-    WidthType,} = require("docx");
+const { Document, HeadingLevel, Packer, Paragraph, Table, TableCell, TableRow, VerticalAlign} = require("docx");
 
 
-const doc = new Document();
+    const doc = new Document();
 
-const table = new Table({
-    rows: 2,
-    columns: 2,
-    float: {
-        horizontalAnchor: TableAnchorType.MARGIN,
-        verticalAnchor: TableAnchorType.MARGIN,
-        relativeHorizontalPosition: RelativeHorizontalPosition.RIGHT,
-        relativeVerticalPosition: RelativeVerticalPosition.BOTTOM,
-    },
-    width: 4535,
-    widthUnitType: WidthType.DXA,
-    layout: TableLayoutType.FIXED,
-});
-
-table.getCell(0, 0).add(new Paragraph("Hello"));
-table.getRow(0).mergeCells(0, 1);
-
-doc.addSection({
-    children: [table],
-});
-
-Packer.toBuffer(doc).then((buffer) => {
-    fs.writeFileSync("My Document.docx", buffer);
-});
+    const table = new Table({
+        rows: [
+            new TableRow({
+                children: [
+                    new TableCell({
+                        children: [new Paragraph({}), new Paragraph({})],
+                        verticalAlign: VerticalAlign.CENTER,
+                    }),
+                    new TableCell({
+                        children: [new Paragraph({}), new Paragraph({})],
+                        verticalAlign: VerticalAlign.CENTER,
+                    }),
+                ],
+            }),
+            new TableRow({
+                children: [
+                    new TableCell({
+                        children: [
+                            new Paragraph({
+                                text:
+                                    "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah",
+                                heading: HeadingLevel.HEADING_1,
+                            }),
+                        ],
+                    }),
+                    new TableCell({
+                        children: [
+                            new Paragraph({
+                                text: "This text should be in the middle of the cell",
+                            }),
+                        ],
+                        verticalAlign: VerticalAlign.CENTER,
+                    }),
+                ],
+            }),
+        ],
+    });
+    
+    doc.addSection({
+        children: [table],
+    });
+    
+    Packer.toBuffer(doc).then((buffer) => {
+        fs.writeFileSync("My Document.docx", buffer);
+    });
