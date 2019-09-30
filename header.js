@@ -9,11 +9,11 @@ const createHeader=(doc,obj)=>{
     const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url),50,50, {
         floating: {
             horizontalPosition: {
-                relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+                relative: HorizontalPositionRelativeFrom.INSIDE_MARGIN,
                 align: HorizontalPositionAlign.RIGHT
             },
             verticalPosition: {
-                relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+                relative: VerticalPositionRelativeFrom.INSIDE_MARGIN,
                 align: VerticalPositionAlign.TOP,
             }
         },
@@ -22,11 +22,11 @@ const createHeader=(doc,obj)=>{
     const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url),50,50, {
         floating: {
             horizontalPosition: {
-                relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
+                relative: HorizontalPositionRelativeFrom.INSIDE_MARGIN,
                 align: HorizontalPositionAlign.LEFT
             },
             verticalPosition: {
-                relative: VerticalPositionRelativeFrom.OUTSIDE_MARGIN,
+                relative: VerticalPositionRelativeFrom.INSIDE_MARGIN,
                 align: VerticalPositionAlign.TOP,
             }
         },

@@ -284,7 +284,7 @@ const createPage2=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.2 Scenario 2: Connected Mode Locked L1800........................................29",
+                text: "6.2           Scenario 2: Connected Mode Locked L1800.........................29",
                 size: 18
                 })
             ],
