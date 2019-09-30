@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType , AlignmentType} = require("docx");
+const { Paragraph, TextRun, Table, WidthType, VerticalAlign, ShadingType } = require("docx");
 
 
 const crearePage7=(obj)=>{
@@ -58,7 +58,6 @@ const crearePage7=(obj)=>{
     .getCell(0, 0)
     .add(new Paragraph({
         text: "OSS Acceptance KPI",
-        alignment: AlignmentType.CENTER,
     }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
@@ -71,7 +70,6 @@ const crearePage7=(obj)=>{
     .getCell(0, 1)
     .add(new Paragraph({
         text: "Nokia KPI",
-        alignment: AlignmentType.CENTER,
     }))
     .setVerticalAlign(VerticalAlign.CENTER)
     .setShading({
@@ -85,7 +83,6 @@ const crearePage7=(obj)=>{
         .getCell(i, 0)
         .add(new Paragraph({
             text: acceptanceKpi[i],
-            alignment: AlignmentType.CENTER,
         }))
         .Properties.setWidth("30%", WidthType.PCT);
     }
@@ -95,7 +92,6 @@ const crearePage7=(obj)=>{
         .getCell(i, 1)
         .add(new Paragraph({
             text: nokiaApi[i],
-            alignment: AlignmentType.CENTER,
         }))
         .Properties.setWidth("70%", WidthType.PCT);
     }
@@ -177,6 +173,7 @@ const crearePage7=(obj)=>{
         new Paragraph({
             children: [new TextRun({
                 text:'4 Definitions of KPI Formula',
+                size: 23,
                 bold: true
                 })
             ]
