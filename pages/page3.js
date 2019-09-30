@@ -109,6 +109,17 @@ const crearePage3=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
+                text: "6.2.11	Overlapped.....................................................43",
+                size: 18
+                })
+            ],
+            indent:{
+                start:500
+            },
+        }),
+        new Paragraph(""),
+        new Paragraph({
+            children: [new TextRun({
                 text: "6.3	Scenario 3: Connected Mode Free Camping.................................45",
                 size: 18
                 })

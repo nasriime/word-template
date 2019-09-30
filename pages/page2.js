@@ -32,7 +32,7 @@ const createPage2=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "2 ACCEPTANCE KPIS............................................................5",
+                text: "2 ACCEPTANCE KPIS.....................................................5",
                 bold: true,
                 size: 20
                 })
@@ -148,6 +148,7 @@ const createPage2=(obj)=>{
         new Paragraph({
             children: [new TextRun({
                 text: "6.1 Scenario 1: Connected Mode Locked L700................................13",
+                bold: true,
                 size: 18
                 })
             ],

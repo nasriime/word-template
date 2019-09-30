@@ -33,7 +33,7 @@ const createPage5=(obj)=>{
     const table = new Table({
         rows: 20,
         columns: 2,
-        width: 4535,
+        width: 5535,
         widthUnitType: WidthType.DXA,
         // columnWidths: [1000, 1000],
         // float: {
@@ -52,8 +52,13 @@ const createPage5=(obj)=>{
 
     table
     .getCell(0, 0)
-    .add(new Paragraph({
-        text: "S/N",
+    .add(new Paragraph({ 
+        children: [new TextRun({
+            text: "S/N",
+            bold: true,
+            size: 18
+            })
+        ],
         alignment: AlignmentType.CENTER,
     }))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -65,8 +70,13 @@ const createPage5=(obj)=>{
 
     table
     .getCell(0, 1)
-    .add(new Paragraph({
-        text: "OSS KPI ( Cluster Level)",
+    .add(new Paragraph({ 
+        children: [new TextRun({
+            text: "OSS KPI ( Cluster Level)",
+            bold: true,
+            size: 18
+            })
+        ],
         alignment: AlignmentType.CENTER,
     }))
     .setVerticalAlign(VerticalAlign.CENTER)
@@ -84,7 +94,7 @@ const createPage5=(obj)=>{
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER)
-        .Properties.setWidth("20%", WidthType.PCT);
+        .Properties.setWidth("15%", WidthType.PCT);
     }
     
     for(var i=1; i<20 ;i++){
@@ -92,10 +102,9 @@ const createPage5=(obj)=>{
         .getCell(i, 1)
         .add(new Paragraph({
             text: KPIs[i],
-            alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER)
-        .Properties.setWidth("80%", WidthType.PCT);
+        .Properties.setWidth("85%", WidthType.PCT);
     }
 
 

@@ -2,8 +2,6 @@ const fs = require("fs");
 const { Media, Paragraph, AlignmentType, TextRun } = require("docx");
 
 const createPage13 = (doc, obj)=>{
-
-    const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url), 555, 315, {});
     
     const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url), 555, 315, {});
 
@@ -53,10 +51,6 @@ const createPage13 = (doc, obj)=>{
             }
         }),
         new Paragraph(""),
-        new Paragraph({
-            children: [image1],
-            alignment: AlignmentType.CENTER,
-        }),
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
