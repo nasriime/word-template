@@ -6,7 +6,7 @@ const { Header, Media, Paragraph,
     
 
 const createHeader=(doc,obj)=>{
-    const image1 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
+    const image1 = Media.addImage(doc, fs.readFileSync(obj.image1Url),50,50, {
         floating: {
             horizontalPosition: {
                 relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,
@@ -19,7 +19,7 @@ const createHeader=(doc,obj)=>{
         },
     });
     
-    const image2 = Media.addImage(doc, fs.readFileSync("./images/bg2.jpg"),50,50, {
+    const image2 = Media.addImage(doc, fs.readFileSync(obj.image2Url),50,50, {
         floating: {
             horizontalPosition: {
                 relative: HorizontalPositionRelativeFrom.OUTSIDE_MARGIN,

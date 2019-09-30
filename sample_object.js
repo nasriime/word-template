@@ -1,6 +1,8 @@
 // Global object of variables 
 module.exports ={
     header:{
+        image1Url: './images/we.png',
+        image2Url: './images/nokia.png',
         headerText: 'LTC Header',
      },
     footer:{
@@ -9,8 +11,8 @@ module.exports ={
     normalLoad: "Normal Load",
     fullLoad: "Full Load",
     page1:{
-        image1Url: './images/bg2.jpg',
-        image2Url: './images/bg2.jpg',
+        image1Url: './images/nokia.png',
+        image2Url: './images/we.png',
         table:{
             cell_0_1: '0,1',
             cell_1_1: '1,1',
