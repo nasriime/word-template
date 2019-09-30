@@ -199,7 +199,8 @@ const crearePage3=(obj)=>{
             children: [new TextRun({
                 text: "7	OSS KPIs on Cluster Level Results...............................................51",
                 size: 20,
-                bold:true
+                bold:true,
+                allCaps: true
                 })
             ],
             indent:{

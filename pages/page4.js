@@ -45,7 +45,8 @@ const createPage4=(obj)=>{
             children: [new TextRun({
                 text: "8	Plot of Traffic..........................................................56",
                 size: 20,
-                bold: true
+                bold: true,
+                allCaps: true
                 })
             ],
             indent:{
@@ -57,7 +58,8 @@ const createPage4=(obj)=>{
             children: [new TextRun({
                 text: "9	Optimization Actions Taken................................................57",
                 size: 20,
-                bold: true
+                bold: true,
+                allCaps: true
                 })
             ],
             indent:{
@@ -91,7 +93,8 @@ const createPage4=(obj)=>{
             children: [new TextRun({
                 text: "10	Performance Summary.......................................................60",
                 size: 20,
-                bold: true
+                bold: true,
+                allCaps: true
                 })
             ],
             indent:{
