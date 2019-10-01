@@ -153,7 +153,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 0)
         .add(new Paragraph({
-            text: i+",0",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -163,7 +163,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 1)
         .add(new Paragraph({
-            text: i+",1",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -173,7 +173,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 2)
         .add(new Paragraph({
-            text: i+",2",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -183,7 +183,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 3)
         .add(new Paragraph({
-            text: i+",3",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -193,7 +193,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 4)
         .add(new Paragraph({
-            text: i+",4",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -203,7 +203,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 5)
         .add(new Paragraph({
-            text: i+",5",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -213,7 +213,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 6)
         .add(new Paragraph({
-            text: i+",6",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -223,7 +223,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 7)
         .add(new Paragraph({
-            text: i+",7",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -233,7 +233,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 8)
         .add(new Paragraph({
-            text: i+",8",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -243,7 +243,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 9)
         .add(new Paragraph({
-            text: i+",9",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
@@ -253,7 +253,7 @@ const createPage9=(obj)=>{
         table
         .getCell(i, 10)
         .add(new Paragraph({
-            text: i+",10",
+            text: "  ",
             alignment: AlignmentType.CENTER,
         }))
         .setVerticalAlign(VerticalAlign.CENTER);
