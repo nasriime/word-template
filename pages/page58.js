@@ -13,7 +13,7 @@ const createPage58 = (obj)=>{
         // ********column 0*********
         table
         .getCell(0, 0)
-        .add(new Paragraph("0,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER)
         .setShading({
             fill: "42c5f4",
@@ -22,41 +22,41 @@ const createPage58 = (obj)=>{
         });
         table
         .getCell(1, 0)
-        .add(new Paragraph("1,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(2, 0)
-        .add(new Paragraph("2,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(3, 0)
-        .add(new Paragraph("3,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(4, 0)
-        .add(new Paragraph("4,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(5, 0)
-        .add(new Paragraph("5,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(6, 0)
-        .add(new Paragraph("6,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(7, 0)
-        .add(new Paragraph("7,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(8, 0)
-        .add(new Paragraph("8,0"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
     
         // ********column 1*********
         table
         .getCell(0, 1)
-        .add(new Paragraph("0,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER)
         .setShading({
             fill: "42c5f4",
@@ -65,35 +65,35 @@ const createPage58 = (obj)=>{
         });
         table
         .getCell(1, 1)
-        .add(new Paragraph("1,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(2, 1)
-        .add(new Paragraph("2,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(3, 1)
-        .add(new Paragraph("3,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(4, 1)
-        .add(new Paragraph("4,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(5, 1)
-        .add(new Paragraph("5,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(6, 1)
-        .add(new Paragraph("6,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(7, 1)
-        .add(new Paragraph("7,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
         table
         .getCell(8, 1)
-        .add(new Paragraph("8,1"))
+        .add(new Paragraph("  "))
         .setVerticalAlign(VerticalAlign.CENTER);
 
     return [
