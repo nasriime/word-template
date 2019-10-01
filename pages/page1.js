@@ -14,8 +14,8 @@ const createPage1 = (doc, obj) => {
   const image1 = Media.addImage(
     doc,
     fs.readFileSync(obj.image1Url),
-    50,
-    50,
+    100,
+    30,
     {},
   );
 
