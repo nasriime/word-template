@@ -45,7 +45,7 @@ const createPage48 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "6.3.5.2 PDF of legeneds",
+                text: "6.3.5.2 PDF of legends",
                 size: 20
                 })
             ],

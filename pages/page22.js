@@ -25,7 +25,7 @@ const createPage22 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "Full Load",
+                text: "Normal Load",
                 size: 20,
                 })
             ],
@@ -69,7 +69,7 @@ const createPage22 = (doc, obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "Normal Load",
+                text: "Full Load",
                 size: 20
                 })
             ],
