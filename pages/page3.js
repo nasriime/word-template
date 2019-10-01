@@ -5,10 +5,6 @@ const { Paragraph, TextRun } = require("docx");
 const crearePage3=(obj)=>{
     return [
         new Paragraph({
-            text: "",
-            pageBreakBefore: true,
-        }),
-        new Paragraph({
             children: [new TextRun({
                 text: "6.2.2	RAT Technology Plot...............................................30",
                 size: 18

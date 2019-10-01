@@ -28,7 +28,7 @@ const createTemplate = (obj, docPath) => {
       headers: createHeader(doc, obj.header),
       footers: createFooter(obj.footer),
       children: [
-        ...pages.createPage1(doc, obj.page1),
+        // ...pages.createPage1(doc, obj.page1),
         ...pages.createPage2(obj.page2),
         ...pages.createPage3(obj.page3),
         ...pages.createPage4(obj.page4),
@@ -40,7 +40,7 @@ const createTemplate = (obj, docPath) => {
         // ...pages.createPage10(obj.page10),
         // ...pages.createPage11(obj.page11),
         // ...pages.createPage12(doc, obj.page12),
-        ...pages.createPage13(doc, obj.page13),
+        // ...pages.createPage13(doc, obj.page13),
         // ...pages.createPage14(doc, obj.page14),
         // ...pages.createPage15(doc, obj.page15),
         // ...pages.createPage16(doc, obj.page16),
