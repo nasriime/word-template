@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { Document, Packer } = require('docx');
+const { Document, Packer, PageBorderDisplay, BorderStyle, PageBorderOffsetFrom } = require('docx');
 const pages = require('./pages');
 const createFooter = require('./footer');
 const createHeader = require('./header');
@@ -20,16 +20,52 @@ const createTemplate = (obj, docPath) => {
     const doc = new Document();
 
     doc.addSection({
+      margins: {
+        top: 20,
+        bottom: 20,
+        right: 500,
+        left: 500,
+    },
+      properties: {
+        pageBorderBottom:{
+          color: "auto",
+          space: 20,
+          style: BorderStyle.SINGLE,
+          size: 6,
+        },
+        pageBorderTop:{
+          color: "auto",
+          space: 20,
+          style: BorderStyle.SINGLE,
+          size: 6,
+        },
+        pageBorderLeft:{
+          color: "auto",
+          space: 20,
+          style: BorderStyle.SINGLE,
+          size: 6,
+        },
+        pageBorderRight:{
+          color: "auto",
+          space: 20,
+          style: BorderStyle.SINGLE,
+          size: 6,
+        },
+        pageBorders:{
+          display: PageBorderDisplay.ALL_PAGES, 
+          offsetFrom : PageBorderOffsetFrom.TEXT,
+        }
+      },
       headers: createHeader(doc, obj.header),
       footers: createFooter(obj.footer),
       children: [
         // ...pages.createPage1(doc, obj.page1),
-        ...pages.createPage2(obj.page2),
-        ...pages.createPage3(obj.page3),
-        ...pages.createPage4(obj.page4),
+        // ...pages.createPage2(obj.page2),
+        // ...pages.createPage3(obj.page3),
+        // ...pages.createPage4(obj.page4),
         // ...pages.createPage5(obj.page5),
         // ...pages.createPage6(obj.page6),
-        // ...pages.createPage7(obj.page7),
+        ...pages.createPage7(obj.page7),
         // ...pages.createPage8(obj.page8),
         // ...pages.createPage9(obj.page9),
         // ...pages.createPage10(obj.page10),

@@ -48,7 +48,7 @@ const crearePage7=(obj)=>{
 
      // ************** table ************
      const table = new Table({
-        rows: 17,
+        rows: 18,
         columns: 2,
         width: 100,
         widthUnitType: WidthType.PERCENTAGE,
@@ -78,7 +78,7 @@ const crearePage7=(obj)=>{
         color: "4f81bd",
     });
 
-    for(var i=1; i<17 ;i++){
+    for(var i=1; i<18 ;i++){
         table
         .getCell(i, 0)
         .add(new Paragraph({
@@ -87,7 +87,7 @@ const crearePage7=(obj)=>{
         .Properties.setWidth("30%", WidthType.PCT);
     }
     
-    for(var i=1; i<17 ;i++){
+    for(var i=1; i<18 ;i++){
         table
         .getCell(i, 1)
         .add(new Paragraph({
