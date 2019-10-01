@@ -17,12 +17,7 @@ const obj = require('./sample_object');
 
 const createTemplate = (obj, docPath) => {
   return new Promise((resolve, reject) => {
-    const doc = new Document(undefined, {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-    });
+    const doc = new Document();
 
     doc.addSection({
       headers: createHeader(doc, obj.header),
