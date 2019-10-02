@@ -163,7 +163,7 @@ const createPage57 = (obj)=>{
             .getCell(0, 0)
             .add(
               new Paragraph({
-                text: 'Paramter Name',
+                text: 'Parameter Name',
                 alignment: AlignmentType.CENTER,
               }),
             )
@@ -446,7 +446,7 @@ const createPage57 = (obj)=>{
         new Paragraph({
             children: [
               new TextRun({
-                text: '9.2 Paramater Tuning',
+                text: '9.2 Parameter Tuning',
                 bold: true,
                 size: 20,
               }),

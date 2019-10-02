@@ -43,7 +43,7 @@ const createPage4=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "8            PLOT OF TRAFFIC..................................................56",
+                text: "8           PLOT OF TRAFFIC..............................56",
                 size: 20,
                 bold: true,
                 })
@@ -55,7 +55,7 @@ const createPage4=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "9            OPTIMIZATION ACTIONS TAKEN...................................................57",
+                text:"9           OPTIMIZATION ACTIONS TAKEN..........................57",
                 size: 20,
                 bold: true,
                 })
@@ -89,7 +89,7 @@ const createPage4=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text: "10            PERFORMANCE SUMMARY...................................................60",
+                text: "10         PERFORMANCE SUMMARY.................................60",
                 size: 20,
                 bold: true,
                 })
