@@ -74,6 +74,7 @@ const createPage37 = (doc, obj)=>{
                 },
             },
         }),
+        new Paragraph(""),
         new Paragraph({
             children: [image1],
             alignment: AlignmentType.CENTER,

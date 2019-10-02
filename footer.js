@@ -1,4 +1,4 @@
-const { Footer, Paragraph, TextRun } = require('docx');
+const { Footer, Paragraph, TextRun, AlignmentType} = require('docx');
 
 const createFooter = obj => {
   const getDate = () => {
@@ -13,13 +13,15 @@ const createFooter = obj => {
       children: [
         new Paragraph({
           children: [
-            new TextRun(`${getDate()}                                  `),
+            new TextRun(`${getDate()}                                          `),
             new TextRun(
-              `NOKIA Confidential                                        `,
+              `NOKIA Confidential                                             `,
             ),
-            new TextRun('Page').pageNumber(),
-            new TextRun('Total').numberOfTotalPages(),
+            new TextRun('Page ').pageNumber(),
+            new TextRun(' '),
+            new TextRun('Total ').numberOfTotalPages(),
           ],
+          alignment: AlignmentType.CENTER,
           border: {
             top: {
               color: 'auto',
