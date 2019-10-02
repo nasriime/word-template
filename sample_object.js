@@ -464,12 +464,8 @@ module.exports ={
                 Action: '',
                 ActionDate: ''
             }
-        ]
-
-     },
-    page58:{ },
-    page59:{ 
-        table: {
+        ],
+        table2: {
             cell_1_0: '  ',
             cell_2_0: '  ',
             cell_3_0: '  ',
@@ -492,7 +488,10 @@ module.exports ={
             cell_5_3: '  ',
             cell_6_3: '  ',
         }
-    },
+
+     },
+    page58:{ },
+    page59:{ },
     page60:{ 
         table1:{
             cell_1_2: '',
