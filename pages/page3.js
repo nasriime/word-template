@@ -5,6 +5,10 @@ const { Paragraph, TextRun } = require("docx");
 const crearePage3=(obj)=>{
     return [
         new Paragraph({
+            text: "",
+            pageBreakBefore: true,
+        }),
+        new Paragraph({
             children: [new TextRun({
                 text: "6.2.2	RAT Technology Plot...............................................30",
                 size: 18
@@ -305,39 +309,6 @@ const crearePage3=(obj)=>{
         new Paragraph({
             children: [new TextRun({
                 text: "7.10	Plot of Average Downlink PDCP User Throughput @ 10 MHz............................54",
-                size: 18
-                })
-            ],
-            indent:{
-                start:500
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "7.11	Plot of Average Uplink PDCP User Throughput @ 10 MHz...............................54",
-                size: 18
-                })
-            ],
-            indent:{
-                start:500
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "7.12	Plot of Average Downlink PDCP User Throughput @ 5 MHz...............................54",
-                size: 18
-                })
-            ],
-            indent:{
-                start:500
-            },
-        }),
-        new Paragraph(""),
-        new Paragraph({
-            children: [new TextRun({
-                text: "7.13	Plot of Average Uplink PDCP User Throughput @ 5 MHz...............................55",
                 size: 18
                 })
             ],
