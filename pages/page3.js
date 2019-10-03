@@ -193,7 +193,7 @@ const crearePage3=(obj)=>{
         new Paragraph(""),
         new Paragraph({
             children: [new TextRun({
-                text:"7           OSS KPIS ON CLUSTER LEVEL RESULTS...............51",
+                text:"7                 OSS KPIS ON CLUSTER LEVEL RESULTS...............51",
                 size: 20,
                 bold:true,
                 })
