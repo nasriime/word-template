@@ -6,6 +6,7 @@ const {
     VerticalAlign,
     ShadingType,
     AlignmentType,
+    BorderStyle,
   } = require('docx');
   
   const crearePage8 = obj => {
@@ -193,6 +194,55 @@ const {
         }),
       )
       .setVerticalAlign(VerticalAlign.CENTER);
+
+
+      // ************** table ************
+     const table2 = new Table({
+      rows: 1,
+      columns: 1,
+      width: 100,
+      widthUnitType: WidthType.PERCENTAGE,
+      margins: {
+        left: 2500,
+      },
+    });
+
+    table2
+    .getCell(0, 0)
+    .add(
+      new Paragraph({
+        children: [
+          table,
+        ],
+    }),
+    )
+    .setVerticalAlign(VerticalAlign.CENTER)
+    .setShading({
+      fill: 'ffffff',
+      val: ShadingType.PERCENT_95,
+      color: 'ffffff',
+    })
+    .Borders
+        .addTopBorder({
+          style: BorderStyle.THICK,
+          size: 20,
+          color: "4f81bd"
+        })
+        .addBottomBorder({
+          style: BorderStyle.THICK,
+          size: 20,
+          color: "4f81bd"
+        })
+        .addStartBorder({
+          style: BorderStyle.THICK,
+          size: 20,
+          color: "4f81bd"
+        })
+        .addEndBorder({
+          style: BorderStyle.THICK,
+          size: 20,
+          color: "4f81bd"
+        });
   
     return [
       new Paragraph({
@@ -229,6 +279,8 @@ const {
       ),
       new Paragraph(''),
       table,
+      new Paragraph(''),
+      table2,
     ];
   };
   
